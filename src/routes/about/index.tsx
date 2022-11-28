@@ -9,7 +9,7 @@ export default component$(() => {
 	return (
 		<div class="ac-content">
 			<div class="banner">
-				<a class="avatar">
+				<a class="avatar" href="https://github.com/jonsam-ng" target="_blank">
 					<img
 						art="avatar"
 						src="https://avatars.githubusercontent.com/u/39360338?v=4"
