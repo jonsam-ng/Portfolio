@@ -1,0 +1,48 @@
+.btn {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 980px;
+  font-size: 12px;
+  min-width: 23px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  &.inline{
+    width: auto;
+  }
+  i.icon{
+    margin-right: 0.4em;
+    svg {
+      width: 14px;
+    }
+  }
+  &.btn-primary{
+    background: #0071e3;
+    color: #fff;
+    svg {
+      fill: #fff;
+    }
+  }
+  &.btn-default{
+    background: #e8e8ed;
+    color: #000;
+    svg {
+      fill: #5a5a5b;
+    }
+  }
+  &.btn-text{
+    color: #06c;
+    svg {
+      fill: #06c;;
+    }
+  }
+}

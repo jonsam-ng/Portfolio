@@ -25,7 +25,7 @@ export default component$(() => {
 					content="width=device-width, initial-scale=1, viewport-fit=cover"
 				></meta>
 				<link rel="manifest" href="/manifest.json" />
-				<link href="/favicon.png" rel="icon" sizes="any"></link>
+				<link href="/favicon.ico" rel="icon" sizes="any"></link>
 				<RouterHead />
 			</head>
 			<body lang="zh-CN">

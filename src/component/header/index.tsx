@@ -1,7 +1,7 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import headerConfigs from "./config";
 import classnames from "classnames";
-import styles from "./header.less?inline";
+import styles from "./index.less?inline";
 
 interface HeaderProps {
 	fixed?: boolean;
@@ -18,7 +18,7 @@ export default component$((props: HeaderProps) => {
 					<li class="logo">
 						<a href="/">
 							<img alt="logo" src="/logo.png" />
-							<h1>Portfolio</h1>
+							<h1>fu7ur3</h1>
 						</a>
 					</li>
 					{headerConfigs.links.map(({ text, to }) => (
