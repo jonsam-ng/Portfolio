@@ -40,7 +40,7 @@ export default component$(() => {
 					<i class="icon">{AlbumIcon}</i>
 					查看图库
 				</a>
-				<a class="btn btn-text chat" src="/about/contact">
+				<a class="btn btn-text chat" href="/about/contact">
 					与我交流
 					<i class="icon">{ArrowRightIcon}</i>
 				</a>

@@ -101,4 +101,53 @@ section {
       margin-top: 42px;
     }
   }
+  &.reading {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #01012a;
+    overflow: hidden;
+    min-height: 555px;
+    justify-content: space-evenly;
+    padding: 17px 14px 13px 0;
+    color: #fff;
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .left {
+      width: 50%;
+      .inner {
+        .book-icon {
+          width: 28px;
+          svg{
+            width: 68px;
+          }
+        }
+        h2 {
+          font-size: 56px;
+          font-weight: 600;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      img {
+        width: 400px;
+      }
+    }
+    .opt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 42px;
+      .icon {
+        &.github svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
 }

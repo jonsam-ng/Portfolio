@@ -1,0 +1,43 @@
+.quote {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .content {
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    padding: 1.5rem;
+    background-color: rgba(31,41,55,.6);
+    border-radius: 1.75rem;
+    width: 60%;
+    height: 60%;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.2em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    .quote-icon {
+      position: absolute;
+      &.up {
+        top: 10px;
+        left: 10px;
+        transform: rotateY(180deg);
+      }
+      &.down {
+        bottom: 10px;
+        right: 10px;
+      }
+      svg {
+        width: 30px;
+        fill: #fff;
+      }
+    }
+  }
+}
