@@ -3,7 +3,7 @@ import { ArrowRightIcon } from "~/component/icon";
 import styles from "./index.less?inline";
 
 interface Props {
-	src: string;
+	imageSrc: string;
 	imageHeight?: number;
 	width?: number;
 	title: string;
@@ -11,18 +11,20 @@ interface Props {
 	link: string;
 	linkText?: string;
 	LinkProps?: any;
+	githubLink?: string;
 }
 
 export default component$((props: Props) => {
 	const {
-		src,
+		imageSrc,
 		imageHeight = 167,
-		width = 323,
+		width = 300,
 		title,
 		detail,
 		LinkProps = {},
 		linkText = "去了解",
 		link,
+		githubLink,
 	} = props;
 	useStylesScoped$(styles);
 
@@ -31,7 +33,7 @@ export default component$((props: Props) => {
 			<a
 				class="album"
 				style={{
-					backgroundImage: `url(${src})`,
+					backgroundImage: `url(${imageSrc})`,
 					height: `${imageHeight}px`,
 				}}
 				href={link}
@@ -41,10 +43,18 @@ export default component$((props: Props) => {
 			<div class="content">
 				<h2>{title}</h2>
 				<p>{detail}</p>
-				<a class="btn btn-primary" target="_blank" {...LinkProps} href={link}>
-					{linkText}
-					<i class="icon">{ArrowRightIcon}</i>
-				</a>
+				<div class="opt">
+					<a class="btn btn-primary" target="_blank" {...LinkProps} href={link}>
+						{linkText}
+						<i class="icon">{ArrowRightIcon}</i>
+					</a>
+					{githubLink && (
+						<a class="btn btn-text" target="_blank" href={githubLink}>
+							Github
+							<i class="icon">{ArrowRightIcon}</i>
+						</a>
+					)}
+				</div>
 			</div>
 		</div>
 	);
