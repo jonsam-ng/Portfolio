@@ -1,34 +1,30 @@
-import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import { QwikLogo } from '../icons/qwik';
-import styles from './header.css?inline';
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import headerConfigs from "./config";
+import classnames from "classnames";
+import styles from "./header.less?inline";
 
-export default component$(() => {
-  useStylesScoped$(styles);
+interface HeaderProps {
+	fixed?: boolean;
+}
 
-  return (
-    <header>
-      <div class="logo">
-        <a href="https://qwik.builder.io/" target="_blank">
-          <QwikLogo />
-        </a>
-      </div>
-      <ul>
-        <li>
-          <a href="https://qwik.builder.io/docs/components/overview/" target="_blank">
-            Docs
-          </a>
-        </li>
-        <li>
-          <a href="https://qwik.builder.io/examples/introduction/hello-world/" target="_blank">
-            Examples
-          </a>
-        </li>
-        <li>
-          <a href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
-            Tutorials
-          </a>
-        </li>
-      </ul>
-    </header>
-  );
+export default component$((props: HeaderProps) => {
+	const { fixed = false } = props;
+	useStylesScoped$(styles);
+
+	return (
+		<header class={classnames({ fixed })}>
+			<div class="ac-content header-content">
+				<ul class="content-links">
+					<li class="logo">
+						<a href="/"></a>
+					</li>
+					{headerConfigs.links.map(({ text, to }) => (
+						<li key={text}>
+							<a href={to}>{text}</a>
+						</li>
+					))}
+				</ul>
+			</div>
+		</header>
+	);
 });
