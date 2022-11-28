@@ -11,7 +11,7 @@
 	],
 	"author": "jonsam ng",
 	"license": "MIT",
-	"repository": "https://github.com/jonsam-ng/portfolio",
+	"repository": "https://github.com/jonsam-ng/100-day-of-js-enhance",
 	"scripts": {
 		"build": "qwik build",
 		"build.client": "vite build",
