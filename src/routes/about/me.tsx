@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import { DocIcon, ArrowRight } from "~/component/icon";
+import { DocIcon, ArrowRightIcon } from "~/component/icon";
 import { ImagePinner } from "~/component";
 import styles from "./section.less?inline";
 
@@ -7,7 +7,7 @@ export default component$(() => {
 	useStylesScoped$(styles);
 
 	return (
-		<section class="section me">
+		<section class="section me" id="me">
 			<p class="name">Jonsam ng</p>
 			<p class="career">前端开发者</p>
 			<p class="tech">使用 React、Vue、TypeScript、Nodejs 技术。</p>
@@ -19,7 +19,7 @@ export default component$(() => {
 				</a>
 				<a class="btn btn-text" src="/about/detail">
 					进一步了解
-					<i class="icon">{ArrowRight}</i>
+					<i class="icon">{ArrowRightIcon}</i>
 				</a>
 			</div>
 			<ImagePinner src="/asset/image/computer.webp" />

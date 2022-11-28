@@ -3,6 +3,7 @@ import { DocumentHead } from "@builder.io/qwik-city";
 import { MessageIcon, DownloadIcon } from "~/component/icon";
 import MeSection from "./me";
 import CitySection from "./city";
+import TechSection from "./tech";
 import styles from "./index.less?inline";
 
 export default component$(() => {
@@ -35,6 +36,7 @@ export default component$(() => {
 			</div>
 			<MeSection />
 			<CitySection />
+			<TechSection />
 		</div>
 	);
 });

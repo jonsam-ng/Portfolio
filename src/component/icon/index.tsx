@@ -82,7 +82,7 @@ export const DocIcon = (
 	</svg>
 );
 
-export const ArrowRight = (
+export const ArrowRightIcon = (
 	<svg
 		t="1669638621142"
 		class="icon"

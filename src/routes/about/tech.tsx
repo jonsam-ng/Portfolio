@@ -6,16 +6,22 @@ import {
 	FootIcon,
 	WorkIcon,
 } from "~/component/icon";
-import { ImagePinner } from "~/component";
+import { ImagePinner, Card } from "~/component";
+import configs from "./config";
 import styles from "./section.less?inline";
 
 export default component$(() => {
 	useStylesScoped$(styles);
 
 	return (
-		<section class="section city" id="city">
-			<p class="name">城市足迹</p>
-			<p class="future">未来与远方</p>
+		<section class="section tech ac-content" id="tech">
+			<p class="title">有几把“刷子”？</p>
+			<ul class="tech-list">
+				{configs.techGroup.map((props) => (
+					<Card key={props.title} {...props}></Card>
+				))}
+			</ul>
+			{/* <p class="future">未来与远方</p>
 			<ul class="from">
 				<li>
 					<i class="icon">{FamilyIcon}</i>
@@ -30,8 +36,8 @@ export default component$(() => {
 					<span>成都</span>
 				</li>
 			</ul>
-			<p class="slogan">未来？遇见哪座城市？</p>
-			<div class="opt">
+			<p class="slogan">未来？遇见哪座城市？</p> */}
+			{/* <div class="opt">
 				<a
 					class="btn btn-primary"
 					target="_blank"
@@ -42,10 +48,10 @@ export default component$(() => {
 				</a>
 				<a class="btn btn-text chat" src="/about/contact">
 					与我交流
-					<i class="icon">{ArrowRightIcon}</i>
+					<i class="icon">{ArrowRight}</i>
 				</a>
-			</div>
-			<ImagePinner src="/asset/image/skyline.png" />
+			</div> */}
+			{/* <ImagePinner src="/asset/image/skyline.png" /> */}
 		</section>
 	);
 });
