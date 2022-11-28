@@ -1,3 +1,5 @@
+import { GithubIcon, HomeIcon } from "~/components/icons";
+
 interface HeaderLink {
 	text: string;
 	to: string;
@@ -30,12 +32,12 @@ const configs: {
 		{
 			text: "Github",
 			to: "https://github.com/jonsam-ng/portfolio",
-			// icon: <GitHubIcon />,
+			icon: GithubIcon,
 		},
 		{
 			text: "Blog",
 			to: "https://www.jonsam.site",
-			// icon: <HomeIcon />,
+			icon: HomeIcon,
 		},
 	],
 };

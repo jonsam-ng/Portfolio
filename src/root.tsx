@@ -5,7 +5,7 @@ import {
 	ServiceWorkerRegister,
 } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
-import globalStyles from "./global.css?inline";
+import globalStyles from "./global.less?inline";
 
 export default component$(() => {
 	/**
