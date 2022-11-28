@@ -1,6 +1,6 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { ArrowRightIcon } from "~/component/icon";
-import { ImagePinner, Card } from "~/component";
+import { Card } from "~/component";
 import configs from "./config";
 import styles from "./section.less?inline";
 
@@ -25,7 +25,6 @@ export default component$(() => {
 					<i class="icon">{ArrowRightIcon}</i>
 				</a>
 			</div>
-			{/* <ImagePinner src="/asset/image/skyline.png" /> */}
 		</section>
 	);
 });

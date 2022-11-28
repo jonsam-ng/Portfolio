@@ -4,6 +4,7 @@ import { MessageIcon, DownloadIcon } from "~/component/icon";
 import MeSection from "./me";
 import CitySection from "./city";
 import TechSection from "./tech";
+import { ImagePinner } from "~/component";
 import styles from "./index.less?inline";
 
 export default component$(() => {
@@ -37,6 +38,7 @@ export default component$(() => {
 			<MeSection />
 			<CitySection />
 			<TechSection />
+			<ImagePinner src="/asset/image/sfumo-nero.png" blurDeg="5px" />
 		</div>
 	);
 });

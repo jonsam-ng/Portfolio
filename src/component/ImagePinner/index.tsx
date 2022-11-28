@@ -4,10 +4,11 @@ interface Props {
 	src: string;
 	height?: number;
 	width?: number;
+	blurDeg?: number;
 }
 
 export default component$((props: Props) => {
-	const { src, height = 180, width = 100 } = props;
+	const { src, height = 180, width = 100, blurDeg = 0 } = props;
 	return (
 		<div
 			style={{
@@ -16,6 +17,7 @@ export default component$((props: Props) => {
 				backgroundSize: "cover",
 				width: `${width}vw`,
 				backgroundRepeatX: "repeat",
+				filter: `blur(${blurDeg})`,
 			}}
 		></div>
 	);
