@@ -1,5 +1,6 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
+import { MUIButton } from "~/integrations/react/mui";
 import styles from "./index.less?inline";
 
 export default component$(() => {
@@ -11,7 +12,7 @@ export default component$(() => {
 				<a class="name">Jonsam ng</a>
 				<ul>
 					<li>
-						<button class="btn btn-primary">联系我</button>
+						<MUIButton variant="contained">联系我</MUIButton>
 					</li>
 				</ul>
 			</div>

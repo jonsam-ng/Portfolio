@@ -1,10 +1,14 @@
+import { GitHubIcon, HomeIcon } from "~/integrations/react/icon";
+
 interface HeaderLink {
 	text: string;
 	to: string;
+	icon?: string;
 }
 
 const configs: {
 	links: HeaderLink[];
+	socialLinks: HeaderLink[];
 } = {
 	links: [
 		{
@@ -22,6 +26,18 @@ const configs: {
 		{
 			text: "联系",
 			to: "/contact",
+		},
+	],
+	socialLinks: [
+		{
+			text: "Github",
+			to: "https://github.com/jonsam-ng/portfolio",
+			icon: <GitHubIcon />,
+		},
+		{
+			text: "Blog",
+			to: "https://www.jonsam.site",
+			icon: <HomeIcon />,
 		},
 	],
 };

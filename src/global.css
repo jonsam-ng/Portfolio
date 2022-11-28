@@ -14,6 +14,7 @@
 	--dark-purple: #713fc2;
 	/* header */
 	--header-height: 44px;
+	--header-background-color: rgba(0, 0, 0, 0.8);
 }
 
 body {
@@ -74,4 +75,8 @@ a {
 
 section.page-content {
 	margin-top: var(--header-height);
+}
+
+.icon {
+	margin-right: 0.4em;
 }
