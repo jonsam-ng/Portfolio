@@ -1,4 +1,4 @@
-import { GithubIcon, HomeIcon } from "~/components/icons";
+import { GithubIcon, HomeIcon } from "~/component/icon";
 
 interface HeaderLink {
 	text: string;

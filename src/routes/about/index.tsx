@@ -1,6 +1,6 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
-import { MessageIcon } from "~/components/icons";
+import { MessageIcon, DownloadIcon } from "~/component/icon";
 import styles from "./index.less?inline";
 
 export default component$(() => {
@@ -17,10 +17,15 @@ export default component$(() => {
 					<span class="name">Jonsam NG</span>
 				</a>
 				<ul class="banner-right">
+					<li class="download-resume">
+						<a class="btn btn-default" href="/resume/download">
+							<i class="icon">{DownloadIcon}</i> 下载简历
+						</a>
+					</li>
 					<li class="contact">
-						<button class="btn btn-primary">
+						<a class="btn btn-primary" href="/contact">
 							<i class="icon">{MessageIcon}</i> 联系我
-						</button>
+						</a>
 					</li>
 				</ul>
 			</div>

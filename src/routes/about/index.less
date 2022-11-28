@@ -28,13 +28,17 @@
       }
     }
     .banner-right{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      li {
+        &:not(:last-of-type) {
+          margin-right: 0.8em;
+        }
+      }
       .contact {
         .icon {
           margin-right: 0.4em;
-        }
-        svg {
-          fill: #fff;
-          width: 18px;
         }
       }
     }
