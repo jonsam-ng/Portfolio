@@ -1,6 +1,6 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
-import { MUIButton } from "~/integrations/react/mui";
+import { MUIButton, MUIAvatar } from "~/integrations/react/mui";
 import styles from "./index.less?inline";
 
 export default component$(() => {
@@ -9,7 +9,14 @@ export default component$(() => {
 	return (
 		<div class="ac-content">
 			<div class="banner">
-				<a class="name">Jonsam ng</a>
+				<a class="avatar">
+					<MUIAvatar
+						art="avatar"
+						src="https://avatars.githubusercontent.com/u/39360338?v=4"
+						sx={{ width: 24, height: 24 }}
+					/>
+					<span class="name">Jonsam NG</span>
+				</a>
 				<ul>
 					<li>
 						<MUIButton variant="contained">联系我</MUIButton>

@@ -6,14 +6,20 @@
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
 
-    .name {
-      color: #000;
-      transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-      opacity: .88;
-      font-size: 21px;
-      font-weight: 600;
-      &:hover {
-        opacity: 1;
+    .avatar{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .name {
+        color: #000;
+        transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+        opacity: .88;
+        font-size: 21px;
+        font-weight: 600;
+        margin-left: 0.2em;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
 	}
