@@ -67,6 +67,7 @@ export default component$(() => {
 					id="tech-tags"
 					window:onLoad$={() => {
 						// see https://nickpiscitelli.github.io/Glider.js/#usage
+						if (!window) return;
 						new Glider(document.querySelector(".glider"), {
 							slidesToShow: 5,
 							slidesToScroll: 2,

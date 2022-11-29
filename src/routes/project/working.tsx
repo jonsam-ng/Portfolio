@@ -12,19 +12,19 @@ export default component$(() => {
 			<h3 class="ac-content">现在，了解一下我参与的项目。</h3>
 			<div
 				class="cards"
-				window:onLoad$={() => {
-					// see https://nickpiscitelli.github.io/Glider.js/#usage
-					new Glider(document.querySelector(".glider"), {
-						slidesToShow: 5,
-						slidesToScroll: 2,
-						draggable: true,
-						dots: ".dots",
-						arrows: {
-							prev: ".glider-prev",
-							next: ".glider-next",
-						},
-					});
-				}}
+				// window:onLoad$={() => {
+				// 	// see https://nickpiscitelli.github.io/Glider.js/#usage
+				// 	new Glider(document.querySelector(".glider"), {
+				// 		slidesToShow: 5,
+				// 		slidesToScroll: 2,
+				// 		draggable: true,
+				// 		dots: ".dots",
+				// 		arrows: {
+				// 			prev: ".glider-prev",
+				// 			next: ".glider-next",
+				// 		},
+				// 	});
+				// }}
 			>
 				<div class="glider-contain">
 					<div class="glider">
