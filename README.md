@@ -26,6 +26,10 @@ This portfolio pages is built on [QwikCity](https://qwik.builder.io) and [Netlif
 
 ## 🚀 Pages
 
+## 📝 Plan
+
+- [ ] support mobile.
+
 ## 🖊️ License
 
 MIT License © 2021 [jonsam-ng](https://github.com/jonsam-ng)

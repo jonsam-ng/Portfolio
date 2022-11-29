@@ -6,7 +6,7 @@ import CitySection from "./city";
 import TechSection from "./tech";
 import ReadingSection from "./reading";
 import WritingSection from "./writing";
-import { ImagePinner, Quote } from "~/component";
+import { Quote } from "~/component";
 import styles from "./index.less?inline";
 
 export default component$(() => {
@@ -15,7 +15,7 @@ export default component$(() => {
 	return (
 		<div class="content">
 			<div class="banner">
-				<div class="inner">
+				<div class="inner ac-content">
 					<a class="avatar" href="https://github.com/jonsam-ng" target="_blank">
 						<img
 							art="avatar"
