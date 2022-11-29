@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import { QuoteIcon, HornIcon } from "~/component/icon";
+import { QuoteIcon, HornIcon } from "~/components/icon";
 import styles from "./index.less?inline";
 
 interface Props {

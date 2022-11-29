@@ -45,6 +45,46 @@ const configs: {
 			text: "NodeJS",
 		},
 	],
+	projects: [
+		{
+			id: "working-project",
+			title: ["现在", "了解一下我参与的项目"],
+			items: [
+				{
+					feature: "端内、H5",
+					title: "小鱼客户端内嵌H5开发与维护",
+					desc: "负责客户端视觉改版、组件开发维护；负责端内多个项目升级重构",
+					img: "/asset/image/p-xy-client.png",
+					style: {},
+					key: "project-xy-client",
+				},
+				{
+					feature: "111",
+					title: "222",
+					desc: "333",
+					img: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-14-202209_GEO_CN?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1661890731676",
+					style: {},
+					key: "2",
+				},
+				{
+					feature: "111",
+					title: "222",
+					desc: "333",
+					img: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-14-202209_GEO_CN?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1661890731676",
+					style: {},
+					key: "3",
+				},
+				{
+					feature: "111",
+					title: "222",
+					desc: "333",
+					img: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-14-202209_GEO_CN?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1661890731676",
+					style: {},
+					key: "4",
+				},
+			],
+		},
+	],
 };
 
 export default configs;

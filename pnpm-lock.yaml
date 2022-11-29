@@ -9,6 +9,7 @@ specifiers:
   '@types/react-dom': 18.0.5
   '@typescript-eslint/eslint-plugin': 5.43.0
   '@typescript-eslint/parser': 5.43.0
+  animate.css: ^4.1.1
   classnames: ^2.3.2
   eslint: 8.28.0
   eslint-plugin-qwik: 0.14.1
@@ -22,6 +23,7 @@ specifiers:
   vite-tsconfig-paths: 3.5.0
 
 dependencies:
+  animate.css: 4.1.1
   classnames: 2.3.2
   glider-js: 1.7.8
 
@@ -1726,6 +1728,10 @@ packages:
       semver: 7.3.8
       write-file-atomic: 3.0.3
     dev: true
+
+  /animate.css/4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
+    dev: false
 
   /ansi-align/3.0.1:
     resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}

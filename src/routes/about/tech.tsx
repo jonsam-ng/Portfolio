@@ -1,6 +1,6 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import { ArrowRightIcon } from "~/component/icon";
-import { Card } from "~/component";
+import { ArrowRightIcon } from "~/components/icon";
+import { Card } from "~/components";
 import configs from "./config";
 import styles from "./section.less?inline";
 
@@ -16,7 +16,7 @@ export default component$(() => {
 				))}
 			</ul>
 			<div class="opt">
-				<a class="btn btn-primary" target="_blank" href="/resume">
+				<a class="btn btn-primary resume" target="_blank" href="/resume">
 					查看简历，了解更多
 					<i class="icon">{ArrowRightIcon}</i>
 				</a>

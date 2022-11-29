@@ -1,6 +1,6 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import { DocIcon, ArrowRightIcon } from "~/component/icon";
-import { ImagePinner } from "~/component";
+import { DocIcon, ArrowRightIcon } from "~/components/icon";
+import { ImagePinner } from "~/components";
 import styles from "./section.less?inline";
 
 export default component$(() => {

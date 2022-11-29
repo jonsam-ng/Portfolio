@@ -5,8 +5,8 @@ import {
 	FamilyIcon,
 	FootIcon,
 	WorkIcon,
-} from "~/component/icon";
-import { ImagePinner } from "~/component";
+} from "~/components/icon";
+import { ImagePinner } from "~/components";
 import styles from "./section.less?inline";
 
 export default component$(() => {

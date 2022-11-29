@@ -5,7 +5,7 @@ import {
 	TeaIcon,
 	ArrowRightIcon,
 	GithubIcon,
-} from "~/component/icon";
+} from "~/components/icon";
 import styles from "./section.less?inline";
 
 export default component$(() => {

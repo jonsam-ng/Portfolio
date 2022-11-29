@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import { ArrowRightIcon } from "~/component/icon";
+import { ArrowRightIcon } from "~/components/icon";
 import styles from "./index.less?inline";
 
 interface Props {
@@ -41,7 +41,7 @@ export default component$((props: Props) => {
 				{...LinkProps}
 			/>
 			<div class="content">
-				<h2>{title}</h2>
+				<p class="title">{title}</p>
 				<p>{detail}</p>
 				<div class="opt">
 					<a class="btn btn-primary" target="_blank" {...LinkProps} href={link}>

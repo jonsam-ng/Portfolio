@@ -1,12 +1,12 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
-import { MessageIcon, DownloadIcon } from "~/component/icon";
+import { MessageIcon, DownloadIcon } from "~/components/icon";
 import MeSection from "./me";
 import CitySection from "./city";
 import TechSection from "./tech";
 import ReadingSection from "./reading";
 import WritingSection from "./writing";
-import { Quote } from "~/component";
+import { Quote } from "~/components";
 import styles from "./index.less?inline";
 
 /**

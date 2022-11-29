@@ -6,9 +6,9 @@ import {
 	CallIcon,
 	CircleLeftIcon,
 	CircleRightIcon,
-} from "~/component/icon";
+} from "~/components/icon";
 import configs from "./config";
-import WorkingSection from "./working";
+import { ProjectList } from "~/components";
 import styles from "./index.less?inline";
 /**
  * Page of Project
@@ -26,84 +26,95 @@ export default component$(() => {
 					<i class="icon">{ArrowRightIcon}</i>
 				</a>
 			</div>
-			<div class="projects ac-content">
-				<div class="detail">
-					<div class="left">
-						<span class="title">我的技术标签</span>
-						<p class="p1">
-							<span class="s1">与社区共同成长，</span>
-							<span class="s2">技术终究会过时，</span>
-						</p>
-						<p class="p2">但思想永远不会。</p>
-					</div>
-					<div class="right">
-						<ul>
-							<li>
-								<i class="icon-h">{ResumeIcon}</i>
-								<div class="item">
-									<p class="q">查看简历？</p>
-									<a class="btn btn-text" href="/resume">
-										去查看
-										<i class="icon">{ArrowRightIcon}</i>
-									</a>
-								</div>
-							</li>
-							<li>
-								<i class="icon-h">{CallIcon}</i>
-								<div class="item">
-									<p class="q">想要了解更多？</p>
-									<a class="btn btn-text" href="/contact">
-										联系我
-										<i class="icon">{ArrowRightIcon}</i>
-									</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div
-					class="topics"
-					id="tech-tags"
-					window:onLoad$={() => {
-						// see https://nickpiscitelli.github.io/Glider.js/#usage
-						if (!window) return;
-						import("glider-js").then((m) => {
-							const Glider = m.default;
-							new Glider(document.querySelector(".glider"), {
-								slidesToShow: 5,
-								slidesToScroll: 2,
-								draggable: true,
-								dots: ".dots",
-								arrows: {
-									prev: ".glider-prev",
-									next: ".glider-next",
-								},
-							});
-						});
-					}}
-				>
-					<div class="glider-contain">
-						<div class="glider">
-							{configs.topics.map(({ src, text, desc, link }) => (
-								<a class="card" key={text} href={link} target="_blank">
-									<img src={src}></img>
-									<h3>{text}</h3>
-									{desc && <p>{desc}</p>}
-								</a>
-							))}
+			<div class="ac-content">
+				<div class="projects">
+					<div class="detail">
+						<div class="left">
+							<span class="title">我的技术标签</span>
+							<p class="p1">
+								<span class="s1">与社区共同成长，</span>
+								<span class="s2">技术终究会过时，</span>
+							</p>
+							<p class="p2">但思想永远不会。</p>
 						</div>
+						<div class="right">
+							<ul>
+								<li>
+									<i class="icon-h">{ResumeIcon}</i>
+									<div class="item">
+										<p class="q">查看简历？</p>
+										<a class="btn btn-text" href="/resume">
+											去查看
+											<i class="icon">{ArrowRightIcon}</i>
+										</a>
+									</div>
+								</li>
+								<li>
+									<i class="icon-h">{CallIcon}</i>
+									<div class="item">
+										<p class="q">想要了解更多？</p>
+										<a class="btn btn-text" href="/contact">
+											联系我
+											<i class="icon">{ArrowRightIcon}</i>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div
+						class="topics"
+						id="tech-tags"
+						window:onLoad$={() => {
+							// see https://nickpiscitelli.github.io/Glider.js/#usage
+							if (!window) return;
+							import("glider-js").then((m) => {
+								const Glider = m.default;
+								new Glider(document.querySelector(".glider-topic"), {
+									slidesToShow: 5,
+									slidesToScroll: 2,
+									draggable: true,
+									dots: ".dots-topic",
+									arrows: {
+										prev: ".glider-prev-topic",
+										next: ".glider-next-topic",
+									},
+								});
+							});
+						}}
+					>
+						<div class="glider-contain">
+							<div class="glider glider-topic">
+								{configs.topics.map(({ src, text, desc, link }) => (
+									<a class="card" key={text} href={link} target="_blank">
+										<img src={src}></img>
+										<p>{text}</p>
+										{desc && <p>{desc}</p>}
+									</a>
+								))}
+							</div>
 
-						<button aria-label="Previous" class="glider-prev btn">
-							{CircleLeftIcon}
-						</button>
-						<button aria-label="Next" class="glider-next btn">
-							{CircleRightIcon}
-						</button>
-						<div role="tablist" class="dots"></div>
+							<button
+								aria-label="Previous"
+								class="glider-prev glider-prev-topic btn"
+							>
+								{CircleLeftIcon}
+							</button>
+							<button
+								aria-label="Next"
+								class="glider-next glider-next-topic btn"
+							>
+								{CircleRightIcon}
+							</button>
+							<div role="tablist" class="dots dots-topic"></div>
+						</div>
 					</div>
 				</div>
+				<ProjectList
+					list={configs.projects}
+					gliderProps={{ slidesToShow: 3, slidesToScroll: 1, draggable: true }}
+				/>
 			</div>
-			<WorkingSection />
 		</div>
 	);
 });

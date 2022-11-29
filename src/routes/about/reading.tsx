@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import { BookIcon, ArrowRightIcon, GithubIcon } from "~/component/icon";
+import { BookIcon, ArrowRightIcon, GithubIcon } from "~/components/icon";
 import styles from "./section.less?inline";
 
 export default component$(() => {
@@ -10,12 +10,13 @@ export default component$(() => {
 			<div class="left">
 				<div class="inner">
 					<i class="book-icon">{BookIcon}</i>
-					<h2>阅读，做更好的自己</h2>
+					<p>阅读，做更好的自己</p>
 					<div class="opt">
 						<a
 							class="btn btn-primary"
 							target="_blank"
 							href="https://ox.jonsam.site/"
+							style={{ paddingRight: "0px" }}
 						>
 							查看我阅读的书籍
 							<i class="icon">{ArrowRightIcon}</i>
