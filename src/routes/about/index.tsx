@@ -9,6 +9,10 @@ import WritingSection from "./writing";
 import { Quote } from "~/component";
 import styles from "./index.less?inline";
 
+/**
+ * Page of About
+ * @desc Inspirations from https://www.apple.com.cn/mac/
+ */
 export default component$(() => {
 	useStylesScoped$(styles);
 

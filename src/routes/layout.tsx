@@ -3,11 +3,9 @@ import Header from "../component/header";
 
 export default component$(() => {
 	return (
-		<>
-			<main>
-				<Header fixed={true} />
-				<Slot />
-			</main>
-		</>
+		<main>
+			<Header fixed={true} />
+			<Slot />
+		</main>
 	);
 });

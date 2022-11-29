@@ -26,6 +26,11 @@ This portfolio pages is built on [QwikCity](https://qwik.builder.io) and [Netlif
 
 ## 🚀 Pages
 
+## 🌟 Inspirations From
+
+- [apple.com](https://www.apple.com.cn/iphone-14/)
+- [reactresume.com](https://reactresume.com/)
+
 ## 📝 Plan
 
 - [ ] support mobile.
