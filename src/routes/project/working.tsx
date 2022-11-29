@@ -1,6 +1,6 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { CircleLeftIcon, CircleRightIcon } from "~/component/icon";
-import Glider from "glider-js";
+// import Glider from "glider-js";
 import configs from "./config";
 import styles from "./index.less";
 
