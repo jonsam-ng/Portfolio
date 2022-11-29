@@ -9,6 +9,7 @@ import {
 } from "~/component/icon";
 import Glider from "glider-js";
 import configs from "./config";
+import WorkingSection from "./working";
 import styles from "./index.less?inline";
 /**
  * Page of Project
@@ -18,23 +19,7 @@ export default component$(() => {
 	useStylesScoped$(styles);
 
 	return (
-		<div
-			class="content"
-			window:onLoad$={() => {
-				// see https://nickpiscitelli.github.io/Glider.js/#usage
-				new Glider(document.querySelector(".glider"), {
-					slidesToShow: 5,
-					slidesToScroll: 2,
-					draggable: true,
-					scrollLock: true,
-					dots: ".dots",
-					arrows: {
-						prev: ".glider-prev",
-						next: ".glider-next",
-					},
-				});
-			}}
-		>
+		<div class="content">
 			<div class="banner">
 				向开源与共享生长。
 				<a class="btn btn-text" href="/project/open-source-plan">
@@ -77,7 +62,23 @@ export default component$(() => {
 						</ul>
 					</div>
 				</div>
-				<div class="topics">
+				<div
+					class="topics"
+					id="tech-tags"
+					window:onLoad$={() => {
+						// see https://nickpiscitelli.github.io/Glider.js/#usage
+						new Glider(document.querySelector(".glider"), {
+							slidesToShow: 5,
+							slidesToScroll: 2,
+							draggable: true,
+							dots: ".dots",
+							arrows: {
+								prev: ".glider-prev",
+								next: ".glider-next",
+							},
+						});
+					}}
+				>
 					<div class="glider-contain">
 						<div class="glider">
 							{configs.topics.map(({ src, text, desc, link }) => (
@@ -99,6 +100,7 @@ export default component$(() => {
 					</div>
 				</div>
 			</div>
+			<WorkingSection />
 		</div>
 	);
 });

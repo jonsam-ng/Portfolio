@@ -21,10 +21,7 @@ export default component$(() => {
 			<div class="banner">
 				<div class="inner ac-content">
 					<a class="avatar" href="https://github.com/jonsam-ng" target="_blank">
-						<img
-							art="avatar"
-							src="https://avatars.githubusercontent.com/u/39360338?v=4"
-						/>
+						<img art="avatar" src="/asset/image/avatar.gif" />
 						<span class="name">Jonsam NG</span>
 					</a>
 					<ul class="banner-right">
