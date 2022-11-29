@@ -20,7 +20,7 @@ export default component$(() => {
 					查看简历，了解更多
 					<i class="icon">{ArrowRightIcon}</i>
 				</a>
-				<a class="btn btn-text chat" src="/project">
+				<a class="btn btn-text chat" href="/project">
 					查看项目
 					<i class="icon">{ArrowRightIcon}</i>
 				</a>

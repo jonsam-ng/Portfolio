@@ -5,6 +5,7 @@ import MeSection from "./me";
 import CitySection from "./city";
 import TechSection from "./tech";
 import ReadingSection from "./reading";
+import WritingSection from "./writing";
 import { ImagePinner, Quote } from "~/component";
 import styles from "./index.less?inline";
 
@@ -44,7 +45,8 @@ export default component$(() => {
 				bgSrc="https://reactresume.com/_next/static/media/testimonial.727a457a.webp"
 				text="让有意义的事变得有趣，让有趣的事变得有意义！"
 			/>
-			<ImagePinner src="/asset/image/sfumo-nero.png" blurDeg="5px" />
+			<WritingSection />
+			{/* <ImagePinner src="/asset/image/sfumo-nero.png" blurDeg="5px" /> */}
 		</div>
 	);
 });

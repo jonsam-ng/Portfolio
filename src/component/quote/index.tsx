@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import { QuoteIcon } from "~/component/icon";
+import { QuoteIcon, HornIcon } from "~/component/icon";
 import styles from "./index.less?inline";
 
 interface Props {
@@ -22,6 +22,7 @@ export default component$((props: Props) => {
 		>
 			<div class="content">
 				<i class="quote-icon up">{QuoteIcon}</i>
+				<i class="icon horn-icon">{HornIcon}</i>
 				{text}
 				<i class="quote-icon down">{QuoteIcon}</i>
 			</div>

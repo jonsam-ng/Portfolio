@@ -3,7 +3,7 @@ const configs = {
 		{
 			title: "源码大作战",
 			detail:
-				"研究前框框架源码，包括React、Vue3、Single-SPA、qiankun等，目前在读SolidJS、Vite...",
+				"研究前端框架源码，包括React、Vue3、Single-SPA、qiankun等，目前在读SolidJS、Vite...",
 			imageSrc: "https://source.jonsam.site/assets/img/logo.png",
 			link: "https://source.jonsam.site",
 			githubLink: "https://github.com/jonsam-ng/fancy-front-end",
