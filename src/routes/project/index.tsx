@@ -7,7 +7,6 @@ import {
 	CircleLeftIcon,
 	CircleRightIcon,
 } from "~/component/icon";
-import Glider from "glider-js";
 import configs from "./config";
 import WorkingSection from "./working";
 import styles from "./index.less?inline";
@@ -68,15 +67,18 @@ export default component$(() => {
 					window:onLoad$={() => {
 						// see https://nickpiscitelli.github.io/Glider.js/#usage
 						if (!window) return;
-						new Glider(document.querySelector(".glider"), {
-							slidesToShow: 5,
-							slidesToScroll: 2,
-							draggable: true,
-							dots: ".dots",
-							arrows: {
-								prev: ".glider-prev",
-								next: ".glider-next",
-							},
+						import("glider-js").then((m) => {
+							const Glider = m.default;
+							new Glider(document.querySelector(".glider"), {
+								slidesToShow: 5,
+								slidesToScroll: 2,
+								draggable: true,
+								dots: ".dots",
+								arrows: {
+									prev: ".glider-prev",
+									next: ".glider-next",
+								},
+							});
 						});
 					}}
 				>
