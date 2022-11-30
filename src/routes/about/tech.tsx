@@ -16,7 +16,7 @@ export default component$(() => {
 				))}
 			</ul>
 			<div class="opt">
-				<a class="btn btn-primary resume" target="_blank" href="/resume">
+				<a class="btn btn-primary resume" href="/resume">
 					查看简历，了解更多
 					<i class="icon">{ArrowRightIcon}</i>
 				</a>

@@ -8,7 +8,7 @@ import {
 	CircleRightIcon,
 } from "~/components/icon";
 import configs from "./config";
-import { ProjectList } from "~/components";
+import { ProjectList, ADBanner } from "~/components";
 import styles from "./index.less?inline";
 /**
  * Page of Project
@@ -50,7 +50,7 @@ export default component$(() => {
 									</div>
 								</li>
 								<li>
-									<i class="icon-h">{CallIcon}</i>
+									<i class="icon-h call">{CallIcon}</i>
 									<div class="item">
 										<p class="q">想要了解更多？</p>
 										<a class="btn btn-text" href="/contact">
@@ -115,6 +115,7 @@ export default component$(() => {
 					list={configs.projects}
 					gliderProps={{ slidesToShow: 3, slidesToScroll: 1, draggable: true }}
 				/>
+				<ADBanner />
 			</div>
 		</div>
 	);
