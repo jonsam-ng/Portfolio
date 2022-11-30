@@ -9,7 +9,18 @@ import styles from "./index.less?inline";
 export default component$(() => {
 	useStylesScoped$(styles);
 
-	return <div class="content">Resume</div>;
+	return (
+		<div class="content">
+			<div class="inner ac-content">
+				<div
+					class="cover pager"
+					style={{ backgroundImage: `url(/asset/image/cover.png)` }}
+				>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	);
 });
 
 export const head: DocumentHead = {

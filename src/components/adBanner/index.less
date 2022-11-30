@@ -2,11 +2,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  padding-top: 20px;
   .resume {
     padding-right: 0;
     margin-right: 20px;
   }
   .btn-text svg {
     fill: #000;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: #ddd;
   }
 }

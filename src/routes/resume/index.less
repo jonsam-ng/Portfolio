@@ -1,3 +1,23 @@
 .content {
   margin-top: var(--header-height);
+  padding: 60px 0;
+  background-image: linear-gradient(to right, #cbcbcb, #aaaaaa);
+  .inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    .cover {
+      height: 978px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-size: 120%;
+    }
+    .pager {
+      width: 650px;
+      border-radius: 4px;
+      // see https://getcssscan.com/css-box-shadow-examples?ref=producthunt
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+  }
 }
