@@ -15,7 +15,6 @@
       width: 20em;
       height: 30em;
       margin-right: 20px;
-      cursor: pointer;
       position: relative;
       overflow: hidden;
       border-radius: 18px;
@@ -37,6 +36,8 @@
         top: 0;
         font-weight: 600;
         box-sizing: border-box;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.08) 80%, rgba(0, 0, 0, 0) );
+        transition: none;
         .feat {
           margin-bottom: 0.4em;
           font-size: 12px;
@@ -50,11 +51,17 @@
           margin: 0;
         }
         .desc {
-          font-size: 14px;
+          font-size: 13px;
           font-weight: 400;
           padding-top: 10px;
           margin-top: 0;
           color: #1d1d1f;
+          margin-bottom: 5px;
+        }
+        .opt {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
         }
       }
     }
@@ -77,6 +84,22 @@
     }
     .glider-next {
       right: -60px;
+    }
+  }
+}
+
+.sections{
+  .card{
+    &.card-project-crm, 
+    &.card-project-patrol, 
+    &.card-project-electron-ui, 
+    &.card-project-component-tools,
+    &.card-project-fancy-front-end {
+      .info {
+        p {
+          color: #fff!important;
+        }
+      }
     }
   }
 }

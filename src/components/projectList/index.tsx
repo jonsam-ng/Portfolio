@@ -1,10 +1,16 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import { CircleLeftIcon, CircleRightIcon } from "~/components/icon";
+import {
+	CircleLeftIcon,
+	CircleRightIcon,
+	ArrowRightIcon,
+	LinkIcon,
+} from "~/components/icon";
 import styles from "./index.less";
 
 interface Props {
 	list: Section[];
 	gliderProps: any;
+	className: string;
 }
 
 interface Section {
@@ -20,14 +26,16 @@ interface ProjectItem {
 	img: string;
 	style: any;
 	key: string;
+	link: string;
+	moreLink: string;
 }
 
 export default component$((props: Props) => {
-	const { list = [], gliderProps = {} } = props;
+	const { list = [], gliderProps = {}, className = "" } = props;
 	useStylesScoped$(styles);
 
 	return (
-		<div class={`content`}>
+		<div class={`content ${className}`}>
 			{list.map((section) => {
 				const { items, id, title = [] } = section;
 				return (
@@ -54,21 +62,48 @@ export default component$((props: Props) => {
 							<div class="glider-contain">
 								<div class={`glider-${id}`}>
 									{items.map(
-										({ feature, title, desc, img, style = {}, key }) => (
+										({
+											feature,
+											title,
+											desc,
+											img,
+											style = {},
+											key,
+											link = "",
+											moreLink,
+										}) => (
 											<div>
-												<a
-													class="card"
+												<div
+													class={`card card-${key}`}
 													key={key}
-													href={`/project/${key}`}
-													target="_self"
 													style={{ ...style, backgroundImage: `url(${img})` }}
 												>
 													<div class="info">
 														<p class="feat">{feature}</p>
 														<p class="title">{title}</p>
 														{desc && <p class="desc">{desc}</p>}
+														<p class="opt">
+															{link && (
+																<a
+																	class="btn btn-primary"
+																	href={link}
+																	target="_blank"
+																>
+																	<i class="icon">{LinkIcon}</i>
+																	演示
+																</a>
+															)}
+															<a
+																class="btn btn-text"
+																href={moreLink ?? `/project/${key}`}
+																target={moreLink ? "_blank" : "_self"}
+															>
+																了解更多
+																<i class="icon">{ArrowRightIcon}</i>
+															</a>
+														</p>
 													</div>
-												</a>
+												</div>
 											</div>
 										)
 									)}

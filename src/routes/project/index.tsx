@@ -111,6 +111,7 @@ export default component$(() => {
 					</div>
 				</div>
 				<ProjectList
+					className="sections"
 					list={configs.projects}
 					gliderProps={{ slidesToShow: 3, slidesToScroll: 1, draggable: true }}
 				/>

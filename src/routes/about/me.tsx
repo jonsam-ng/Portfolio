@@ -13,11 +13,11 @@ export default component$(() => {
 			<p class="tech">使用 React、Vue、TypeScript、Nodejs 技术。</p>
 			<p class="slogan">开源、分享和进步</p>
 			<div class="opt">
-				<a class="btn btn-primary" src="/resume">
+				<a class="btn btn-primary" href="/resume">
 					<i class="icon">{DocIcon}</i>
 					查看简历
 				</a>
-				<a class="btn btn-text" src="/about/detail">
+				<a class="btn btn-text" href="/about/detail">
 					进一步了解
 					<i class="icon">{ArrowRightIcon}</i>
 				</a>

@@ -34,6 +34,7 @@ This portfolio pages is built on [QwikCity](https://qwik.builder.io) and [Netlif
 ## 📝 Plan
 
 - [ ] support mobile.
+- [ ] 404page.
 
 ## 🖊️ License
 
