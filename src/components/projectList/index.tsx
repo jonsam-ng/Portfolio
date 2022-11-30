@@ -90,7 +90,7 @@ export default component$((props: Props) => {
 																	target="_blank"
 																>
 																	<i class="icon">{LinkIcon}</i>
-																	演示
+																	查看
 																</a>
 															)}
 															<a
