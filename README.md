@@ -22,7 +22,7 @@ Welcome to Jonsam's personal <b>Portfolio</b> pages.🧑‍💻👩‍💻👨�
 
 ## 📦 About
 
-This portfolio pages is built on [QwikCity](https://qwik.builder.io) and [Netlify Edge Functions](https://docs.netlify.com/edge-functions/overview/).IF you like this project, feel free to use as a template and hit a star for me.
+This portfolio pages is built on [QwikCity](https://qwik.builder.io) and [Netlify](https://docs.netlify.com/edge-functions/overview/). IF you like this project, feel free to use as a template and hit a star for me.
 
 ## 🚀 Pages
 

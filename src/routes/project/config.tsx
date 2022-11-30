@@ -48,11 +48,11 @@ const configs: {
 	projects: [
 		{
 			id: "working-project",
-			title: ["现在", "了解一下我参与的项目"],
+			title: ["现在", "了解一下我参与的企业项目"],
 			items: [
 				{
 					feature: "小鱼易连、端内、H5",
-					title: "客户端内嵌H5开发与维护",
+					title: "客户端内嵌H5",
 					desc: "负责客户端视觉改版、组件、页面开发维护；负责端内通讯录、直播等项目升级重构。硬终端内部分H5页面开发。",
 					img: "/asset/image/p-xy-client.png",
 					key: "project-xy-client",
