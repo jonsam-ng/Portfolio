@@ -1,23 +1,54 @@
-.content {
+.content.__resume__ {
   margin-top: var(--header-height);
   padding: 60px 0;
   background-image: linear-gradient(to right, #cbcbcb, #aaaaaa);
   .inner {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    .cover {
-      height: 978px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-size: 120%;
-    }
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     .pager {
       width: 650px;
       border-radius: 4px;
       // see https://getcssscan.com/css-box-shadow-examples?ref=producthunt
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+      box-sizing: border-box;
+      background-image: url(/asset/image/resume_cover.webp);
+      background-size: cover;
+      background-size: 150%;
+      position: relative;
+      background-repeat: repeat-y;
+      background-position: center;
+      overflow: hidden;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      &.cover {
+        height: 978px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 120%;
+        background-image: url(/asset/image/cover.png);
+        margin-bottom: 8px;
+        .info {
+          position: absolute;
+          bottom: 250px;
+          left: 50%;
+          transform: translateX(-50%);
+          user-select:text!important;
+          p {
+            margin-bottom: 0.4em;
+            font-weight: 500;
+            span {
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+    .content {
+      padding: 20px 16px;
     }
   }
 }
