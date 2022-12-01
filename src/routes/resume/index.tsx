@@ -1,9 +1,8 @@
-import { component$, useStyles$, $ } from "@builder.io/qwik";
+import { component$, useStyles$, $, useClientEffect$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import { TOC } from "~/components";
 import { DownloadIcon } from "~/components/icon";
 import Resume from "./resume";
-import html2pdf from "html2pdf.js";
 import styles from "./index.less?inline";
 
 /**
@@ -12,10 +11,16 @@ import styles from "./index.less?inline";
  */
 export default component$(() => {
 	useStyles$(styles);
+	useClientEffect$(() => {
+		import("html2pdf.js").then((m) => {
+			window.html2pdf = m.default;
+		});
+	});
 
 	const onDownload = $(() => {
 		const element = document.getElementById("__resume_content_wrapper__");
-		if (!element) return;
+		const html2pdf = window.html2pdf;
+		if (!element || !html2pdf) return;
 		// see https://github.com/eKoopmans/html2pdf.js?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library#options
 		html2pdf()
 			.set({
