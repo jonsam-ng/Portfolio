@@ -116,7 +116,7 @@ export default component$(() => {
 						<span>软件工程（本科）</span>
 						<span>2016.09-2020.07</span>
 						<span>
-							<LearnMore link="/about/edu" />
+							<LearnMore link="https://portfolio.jonsam.site/about/edu" />
 						</span>
 					</p>
 					<p>
@@ -139,7 +139,7 @@ export default component$(() => {
 						<span>前端开发（业务部）</span>
 						<span>2020.07-至今</span>
 						<span>
-							<LearnMore link="/project/?#working-project" />
+							<LearnMore link="https://portfolio.jonsam.site/project/?#working-project" />
 						</span>
 					</p>
 					<ul class="vertical mark">

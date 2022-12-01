@@ -1,7 +1,9 @@
-import { component$, useStyles$ } from "@builder.io/qwik";
+import { component$, useStyles$, $ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import { TOC } from "~/components";
+import { DownloadIcon } from "~/components/icon";
 import Resume from "./resume";
+import html2pdf from "html2pdf.js";
 import styles from "./index.less?inline";
 
 /**
@@ -11,8 +13,52 @@ import styles from "./index.less?inline";
 export default component$(() => {
 	useStyles$(styles);
 
+	const onDownload = $(() => {
+		const element = document.getElementById("__resume_content_wrapper__");
+		if (!element) return;
+		// see https://github.com/eKoopmans/html2pdf.js?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library#options
+		html2pdf()
+			.set({
+				margin: [12, 8],
+				filename: "吴青山的简历-前端开发工程师",
+				image: {
+					type: "jpeg",
+					quality: 0.98,
+				},
+				// see https://html2canvas.hertzen.com/configuration
+				html2canvas: {
+					allowTaint: true,
+					useCORS: true,
+					backgroundColor: "#fff",
+					// logging: false,
+				},
+				// see https://rawgit.com/MrRio/jsPDF/master/docs/jsPDF.html
+				jsPDF: {
+					unit: "mm",
+					format: "a4",
+					orientation: "portrait",
+					precision: 25,
+					floatPrecision: 25,
+				},
+				pagebreak: { mode: "css" },
+			})
+			.from(element)
+			.save();
+	});
+
 	return (
 		<div class="content __resume__">
+			<div class="banner">
+				<div class="inner">
+					<div class="left"></div>
+					<div class="right">
+						<a class="btn btn-primary" onClick$={onDownload}>
+							<i class="icon">{DownloadIcon}</i>
+							下载简历
+						</a>
+					</div>
+				</div>
+			</div>
 			<TOC
 				tocProps={{
 					contentSelector: ".__resume__",
@@ -46,7 +92,7 @@ export default component$(() => {
 						</p>
 					</div>
 				</div>
-				<div class="pager content">
+				<div class="pager content" id="__resume_content_wrapper__">
 					<Resume />
 				</div>
 			</div>
