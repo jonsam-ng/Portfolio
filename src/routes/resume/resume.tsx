@@ -185,7 +185,7 @@ export default component$(() => {
 					</p>
 					<ul class="vertical mark">
 						<li>
-							掌握计算机组成原理、数据库、网络原理、浏览器渲染原理等专业知识。
+							掌握计算机组成原理、数据库、网络原理、浏览器渲染原理、数据结构与算法等专业知识。
 						</li>
 						<li>
 							熟练掌握HTML5、CSS3和JavaScript语言、ES6以及SCSS、LESS等CSS预处理器工具。
@@ -222,7 +222,7 @@ export default component$(() => {
 
 				<div class="block">
 					<p class="title">
-						<span>更多</span>
+						<span>更多技能</span>
 					</p>
 					<ul class="vertical mark">
 						<li>
@@ -276,7 +276,7 @@ export default component$(() => {
 				<p>
 					<span>
 						<LearnMore
-							link="https://webrtc.jonsam.site/"
+							link="https://portfolio.jonsam.site/project/"
 							text="了解更多我参与的企业项目和个人项目"
 						/>
 					</span>

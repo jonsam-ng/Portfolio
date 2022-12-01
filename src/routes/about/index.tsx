@@ -26,8 +26,8 @@ export default component$(() => {
 					</a>
 					<ul class="banner-right">
 						<li class="download-resume">
-							<a class="btn btn-default" href="/resume/download">
-								<i class="icon">{DownloadIcon}</i> 下载简历
+							<a class="btn btn-default" href="/resume/">
+								<i class="icon">{DownloadIcon}</i> 查看简历
 							</a>
 						</li>
 						<li class="contact">

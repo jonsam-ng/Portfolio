@@ -1,7 +1,7 @@
 import { component$, useStyles$, $, useClientEffect$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import { TOC } from "~/components";
-import { DownloadIcon } from "~/components/icon";
+import { CallIcon, DownloadIcon } from "~/components/icon";
 import Resume from "./resume";
 import styles from "./index.less?inline";
 
@@ -58,10 +58,24 @@ export default component$(() => {
 				<div class="inner">
 					<div class="left"></div>
 					<div class="right">
+						<a class="btn btn-default" href="/contact">
+							<i class="icon">{CallIcon}</i>
+							联系我
+						</a>
 						<a class="btn btn-primary" onClick$={onDownload}>
 							<i class="icon">{DownloadIcon}</i>
 							下载简历
 						</a>
+						<span class="download-cache">
+							下载失败？
+							<a
+								class="btn btn-text"
+								href="/asset/吴青山的简历-前端开发工程师.pdf"
+								target="_blank"
+							>
+								从缓存下载
+							</a>
+						</span>
 					</div>
 				</div>
 			</div>

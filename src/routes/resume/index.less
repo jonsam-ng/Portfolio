@@ -27,6 +27,26 @@
       align-items: center;
       justify-content: space-between;
       flex-direction: row;
+      .right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a {
+          &:not(:last-of-type) {
+            margin-right: 12px;
+          }
+        }
+        .download-cache {
+          font-size: 12px;
+          margin-left: 8px;
+          color: #666;
+          a {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
     }
   }
   .inner {
