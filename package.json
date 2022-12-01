@@ -52,7 +52,6 @@
 		"classnames": "^2.3.2",
 		"glider-js": "^1.7.8",
 		"html2pdf.js": "^0.10.1",
-		"jspdf": "^2.5.1",
 		"tocbot": "^4.19.0",
 		"vanilla-back-to-top": "^7.2.1"
 	}

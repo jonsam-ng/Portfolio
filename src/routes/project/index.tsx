@@ -122,5 +122,5 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-	title: "Project",
+	title: "我的项目",
 };

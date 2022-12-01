@@ -43,7 +43,7 @@ export default component$(() => {
 			<TechSection />
 			<ReadingSection />
 			<Quote
-				bgSrc="https://reactresume.com/_next/static/media/testimonial.727a457a.webp"
+				bgSrc="/asset/image/quote-bg.jpeg"
 				text="让有意义的事变得有趣，让有趣的事变得有意义！"
 			/>
 			<WritingSection />
@@ -53,5 +53,5 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-	title: "About",
+	title: "关于我",
 };

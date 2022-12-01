@@ -13,5 +13,5 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-	title: "Contact",
+	title: "联系我",
 };

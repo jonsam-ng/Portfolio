@@ -133,22 +133,24 @@
     &:hover {
       color: var(--primary-color);
       svg {
-        fill: var(--primary-color);
+        fill: var(--primary-color)!important;
       }
     }
     &.more {
       vertical-align: middle;
       line-height: 16px;
-      font-size: 12px;
+      font-size: 10px;
+      opacity: 0.4;
       i {
         display: inline-block;
         width: 14px;
         height: 14px;
-        margin-left: 0.2em;
+        margin-left: 0.15em;
         vertical-align: middle;
         svg {
           width: 10px;
           height: 10px;
+          fill: rgb(170, 169, 169);
         }
       }
     }

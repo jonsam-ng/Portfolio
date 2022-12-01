@@ -11,6 +11,7 @@ import styles from "./index.less?inline";
  */
 export default component$(() => {
 	useStyles$(styles);
+
 	useClientEffect$(() => {
 		import("html2pdf.js").then((m) => {
 			window.html2pdf = m.default;
@@ -35,7 +36,7 @@ export default component$(() => {
 					allowTaint: true,
 					useCORS: true,
 					backgroundColor: "#fff",
-					// logging: false,
+					logging: false,
 				},
 				// see https://rawgit.com/MrRio/jsPDF/master/docs/jsPDF.html
 				jsPDF: {
@@ -69,7 +70,7 @@ export default component$(() => {
 					contentSelector: ".__resume__",
 					headingSelector: "h2, h3",
 					headingsOffset: 44,
-					scrollSmoothOffset: -48,
+					scrollSmoothOffset: -88,
 				}}
 			/>
 			<div class="inner ac-content">
@@ -95,6 +96,12 @@ export default component$(() => {
 						<p>
 							<span>邮箱：</span>jonsam.ng@foxmail.com
 						</p>
+						<p>
+							<span>博客：</span>https://www.jonsam.site
+						</p>
+						<p>
+							<span>主页：</span>https://portfolio.jonsam.site/
+						</p>
 					</div>
 				</div>
 				<div class="pager content" id="__resume_content_wrapper__">
@@ -106,5 +113,5 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-	title: "Resume",
+	title: "我的简历",
 };
