@@ -6,3 +6,4 @@ export { default as ADBanner } from "./adBanner";
 export { default as Footer } from "./footer";
 export { default as Header } from "./header";
 export { default as Back2Top } from "./back2top";
+export { default as TOC } from "./toc";

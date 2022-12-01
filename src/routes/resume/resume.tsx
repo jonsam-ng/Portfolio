@@ -17,10 +17,10 @@ export default component$(() => {
 				</div>
 			</section>
 
-			<h2>
+			<h2 id="basic">
 				<span>基本资料</span>
 			</h2>
-			<section id="basic">
+			<section>
 				<ul>
 					<li>
 						<span class="key">姓名</span>吴青山
@@ -61,10 +61,10 @@ export default component$(() => {
 				</ul>
 			</section>
 
-			<h2>
+			<h2 id="links">
 				<span>个人链接</span>
 			</h2>
-			<section id="links">
+			<section>
 				<ul class="vertical mark">
 					<li>
 						<span class="key">主页</span>
@@ -87,30 +87,30 @@ export default component$(() => {
 				</ul>
 			</section>
 
-			<h2>
+			<h2 id="edu">
 				<span>教育背景</span>
 			</h2>
-			<section id="edu"></section>
+			<section></section>
 
 			<h2>
 				<span>工作经历</span>
 			</h2>
 			<section id="working"></section>
 
-			<h2>
+			<h2 id="project">
 				<span>专业技能</span>
 			</h2>
-			<section id="project"></section>
+			<section></section>
 
-			<h2>
+			<h2 id="project">
 				<span>项目经验</span>
 			</h2>
-			<section id="project"></section>
+			<section></section>
 
-			<h2>
+			<h2 id="me">
 				<span>自我评价</span>
 			</h2>
-			<section id="project"></section>
+			<section></section>
 		</div>
 	);
 });

@@ -1,0 +1,18 @@
+@import 'tocbot/dist/tocbot.css';
+
+.toc{
+  position: fixed;
+  font-size: 12px;
+  transition: all 300ms ease-in-out;
+  z-index: 999;
+  &.toc-right{
+    right: calc((100% - var(--pager-width)) / 2 - 10em);
+  }
+  .toc-list {
+    .toc-list-item  {
+      .is-active-link::before {
+        background-color: var(--primary-color);
+      }
+    }
+  }
+}
