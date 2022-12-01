@@ -70,7 +70,7 @@ export default component$(() => {
 							下载失败？
 							<a
 								class="btn btn-text"
-								href="/asset/吴青山的简历-前端开发工程师.pdf"
+								href="https://github.com/jonsam-ng/Portfolio/blob/master/public/asset/%E5%90%B4%E9%9D%92%E5%B1%B1%E7%9A%84%E7%AE%80%E5%8E%86-%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88.pdf"
 								target="_blank"
 							>
 								从缓存下载
