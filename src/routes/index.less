@@ -1,3 +1,47 @@
 .content {
   margin-top: var(--header-height);
 }
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 4em;
+  .title {
+    font-size: 56px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.2em;
+  }
+  .desc {
+    font-size: 24px;
+    font-weight: 350;
+    margin-bottom: 0.8em;
+  }
+  .opt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn-primary {
+      padding-right: 0;
+    }
+  }
+  &.dark {
+    color: #fff;
+  }
+  &.light {
+    color: #000;
+  }
+  img {
+    &:not(.full){
+    width: 40%;
+    max-width: 600px;
+    min-width: 300px;
+    }
+    &.full {
+      width: 100%;
+      max-height: 380px;
+    }
+  }
+}
