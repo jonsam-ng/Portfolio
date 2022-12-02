@@ -25,7 +25,7 @@ export const Section = component$(
 
 		return (
 			<div
-				class={`section ${dark ? "dark" : "light"}`}
+				class={`home-section ${dark ? "dark" : "light"}`}
 				style={{ ...containerStyles }}
 			>
 				<p class="title">{title}</p>
