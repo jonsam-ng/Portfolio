@@ -22,20 +22,26 @@ Welcome to Jonsam's personal <b>Portfolio</b> pages.🧑‍💻👩‍💻👨�
 
 ## 📦 About
 
-This portfolio pages is built on [QwikCity](https://qwik.builder.io) and [Netlify](https://docs.netlify.com/edge-functions/overview/). IF you like this project, feel free to use as a template and hit a star for me.
+Portfolio pages are personal introducing pages for others to knows about who are you and what you are doing. It's a personal entrance and a good place for employers to deeply find more about you for persons who are hunting for a proper job.
+
+The portfolio pages is built on [QwikCity](https://qwik.builder.io) and [Netlify](https://docs.netlify.com/edge-functions/overview/). I chose `QwikCity` because I want a better load speed and SEO supported.
+
+If you like :sparkling_heart: this project, feel free to use as a template and hit a star for me.:pray:
 
 ## 🚀 Pages
 
+check [fu7ur3](https://portfolio.jonsam.site/) for more detail.
+
 ## 🌟 Inspirations
 
-Thanks for great inspirations provided by:
+Thanks for great inspirations :thumbsup: provided by:
 
 - [apple.com](https://www.apple.com.cn/iphone-14/)
 
 ## 📝 Plan
 
 - [x] support mobile.
-- [ ] custom 404 page.(QwikCity seems not support this feature.)
+- [ ] custom 404 page.(QwikCity seems not support this feature yet, see [[✨] Customize 404 not found page · Issue #2345 · BuilderIO/qwik](https://github.com/BuilderIO/qwik/issues/2345).)
 - [x] download resume.
 - [x] faster speed.
 - [ ] better animation UX.
