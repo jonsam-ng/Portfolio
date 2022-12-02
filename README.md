@@ -11,7 +11,7 @@ Welcome to Jonsam's personal <b>Portfolio</b> pages.🧑‍💻👩‍💻👨�
 </p>
 
 <p align="center">
-  <a href="https://resume.jonsam.site/示例">🍁 Resume</a> | <a href="https://portfolio.jonsam.site">📖 Documentation</a>
+  <a href="https://portfolio.jonsam.site/resume/">🍁 Resume</a> | <a href="https://portfolio.jonsam.site">📖 Documentation</a>
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@ check [fu7ur3](https://portfolio.jonsam.site/) for more detail.
 
 Thanks for great inspirations :thumbsup: provided by:
 
-- [apple.com](https://www.apple.com.cn/iphone-14/)
+- [apple.com.cn](https://www.apple.com.cn/)
 
 ## 📝 Plan
 
