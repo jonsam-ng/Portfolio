@@ -3,7 +3,7 @@
 <a href="https://portfolio.jonsam.site" target="_blank">
 <img src="./logo.png" alt="portfolio" height="250" width="250"/>
 </a>
-<h1 align="center">Portfolio🔥🔥</h1>
+<h1 align="center">Portfolio | Fu7ur3 🔥🔥🔥</h1>
 </p>
 
 <p align="center">
@@ -20,15 +20,15 @@ Welcome to Jonsam's personal <b>Portfolio</b> pages.🧑‍💻👩‍💻👨�
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b8b6d187-189c-43d3-b7ef-67af7163da01/deploy-status)](https://app.netlify.com/sites/aquamarine-meringue-336076/deploys)
 
-
-
 ## 📦 About
 
 This portfolio pages is built on [QwikCity](https://qwik.builder.io) and [Netlify](https://docs.netlify.com/edge-functions/overview/). IF you like this project, feel free to use as a template and hit a star for me.
 
 ## 🚀 Pages
 
-## 🌟 Inspirations From
+## 🌟 Inspirations
+
+Thanks for great inspirations provided by:
 
 - [apple.com](https://www.apple.com.cn/iphone-14/)
 
@@ -37,8 +37,12 @@ This portfolio pages is built on [QwikCity](https://qwik.builder.io) and [Netlif
 - [x] support mobile.
 - [ ] custom 404 page.(QwikCity seems not support this feature.)
 - [x] download resume.
-- [x] faster speed
-- [ ] better animation UX
+- [x] faster speed.
+- [ ] better animation UX.
+- [ ] PWA.
+- [ ] optimize mobile UX.
+- [ ] better SEO: generate sitemap, robot.txt and SE push.
+- [ ] switch skins for resume.
 
 ## 🖊️ License
 
