@@ -35,7 +35,7 @@ export default component$(() => {
 				<div class="info">
 					<h1>吴青山</h1>
 					<p>
-						<span>男</span>|<span>22岁</span>|<span>前端开发工程师</span>|
+						<span>男</span>|<span>25岁</span>|<span>前端开发工程师</span>|
 						<span>2年经验</span>|
 						<span>
 							<a href="https://portfolio.jonsam.site/resume/" target="_blank">
@@ -334,6 +334,15 @@ export default component$(() => {
 						/>
 					</span>
 				</p>
+			</section>
+
+			<h2 id="cert">
+				<span>证书荣誉</span>
+			</h2>
+			<section>
+				<ul class="vertical mark">
+					<li>大学英语四六级证书。</li>
+				</ul>
 			</section>
 
 			<h2 id="me">
