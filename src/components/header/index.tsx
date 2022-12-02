@@ -18,7 +18,7 @@ export default component$((props: HeaderProps) => {
 					<li class="logo">
 						<a href="/">
 							<img alt="logo" src="/logo.png" />
-							<h1>fu7ur3</h1>
+							<h1 class="heading">fu7ur3</h1>
 						</a>
 					</li>
 					{headerConfigs.links.map(({ text, to }) => (
