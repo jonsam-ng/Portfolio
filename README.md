@@ -11,7 +11,7 @@ Welcome to Jonsam's personal <b>Portfolio</b> pages.🧑‍💻👩‍💻👨�
 </p>
 
 <p align="center">
-  <a href="https://portfolio.jonsam.site/resume/">🍁 Resume</a> | <a href="https://portfolio.jonsam.site">📖 Documentation</a>
+  <a href="https://portfolio.jonsam.site/resume/" target="_blank">🍁 Resume</a> | <a href="https://portfolio.jonsam.site" target="_blank">📖 Documentation</a>
 </p>
 
 <p align="center">
