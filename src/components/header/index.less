@@ -102,3 +102,25 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 768px){
+  header {
+   .header-content{
+    .content-links {
+      .logo {
+        margin-right: 1em;
+         a > h1, &::after {
+          display: none;
+        }
+      }
+      li {
+        margin-right: 0.6em!important;
+      }
+
+    }
+    .social-links {
+      display: none;
+    }
+   }
+  }
+}
