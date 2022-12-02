@@ -30,15 +30,16 @@ export default component$(() => {
 				phone: false,
 				tablet: false,
 			};
-			const [slidesToShow, slidesToScroll] = phone
-				? [2, 1]
+			const [slidesToShow, slidesToScroll, scrollLock] = phone
+				? [2, 1, true]
 				: tablet
-				? [4, 2]
-				: [5, 2];
+				? [4, 2, true]
+				: [5, 2, false];
 			new Glider(document.querySelector(".glider-topic"), {
 				slidesToShow,
 				slidesToScroll,
 				draggable: true,
+				scrollLock,
 				dots: ".dots-topic",
 				arrows: {
 					prev: ".glider-prev-topic",
