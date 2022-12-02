@@ -1,5 +1,6 @@
 import { component$, Slot } from "@builder.io/qwik";
 import { Header, Footer, Back2Top } from "../components";
+import { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
 	return (
@@ -11,3 +12,9 @@ export default component$(() => {
 		</main>
 	);
 });
+
+export const head: DocumentHead<EndpointData> = ({ head }) => {
+	return {
+		title: `${head.title} | fu7ur3`,
+	};
+};

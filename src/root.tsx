@@ -21,10 +21,8 @@ export default component$(() => {
 		<QwikCityProvider>
 			<head>
 				<meta charSet="utf-8" />
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1, viewport-fit=cover"
-				></meta>
+				<meta name="keywords" content="jonsam,jonsam ng,个人主页,简历" />
+				<meta name="description" content="jonsam的个人主页" />
 				<link rel="manifest" href="/manifest.json" />
 				<link href="/favicon.ico" rel="icon" sizes="any"></link>
 				<RouterHead />

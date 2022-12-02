@@ -1,4 +1,5 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import styles from "./index.less";
 
 interface Props {
 	src: string;
@@ -9,14 +10,15 @@ interface Props {
 
 export default component$((props: Props) => {
 	const { src, height = 180, width = 100, blurDeg = 0 } = props;
+	useStylesScoped$(styles);
+
 	return (
 		<div
+			class="pinner"
 			style={{
 				background: `url(${src})`,
 				height: `${height}px`,
-				backgroundSize: "cover",
 				width: `${width}vw`,
-				backgroundRepeatX: "repeat",
 				filter: `blur(${blurDeg})`,
 			}}
 		></div>

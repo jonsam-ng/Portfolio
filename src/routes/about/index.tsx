@@ -47,7 +47,6 @@ export default component$(() => {
 				text="让有意义的事变得有趣，让有趣的事变得有意义！"
 			/>
 			<WritingSection />
-			{/* <ImagePinner src="/asset/image/sfumo-nero.png" blurDeg="5px" /> */}
 		</div>
 	);
 });

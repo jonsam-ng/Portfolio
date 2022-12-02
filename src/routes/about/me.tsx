@@ -22,7 +22,7 @@ export default component$(() => {
 					<i class="icon">{ArrowRightIcon}</i>
 				</a>
 			</div>
-			<ImagePinner src="/asset/image/computer.webp" />
+			<ImagePinner src="/asset/image/computer.jpeg" />
 		</section>
 	);
 });
