@@ -43,7 +43,7 @@ export default component$(() => {
 			<TechSection />
 			<ReadingSection />
 			<Quote
-				bgSrc="/asset/image/quote-bg.jpeg"
+				bgSrc="/asset/image/quote-bg.webp"
 				text="让有意义的事变得有趣，让有趣的事变得有意义！"
 			/>
 			<WritingSection />

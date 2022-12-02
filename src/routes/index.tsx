@@ -67,7 +67,7 @@ export default component$(() => {
 			<Section
 				title="开拓"
 				desc="向上生长，向下扎根"
-				img="/asset/image/tree.png"
+				img="/asset/image/tree.webp"
 				containerStyles={{ backgroundColor: "#fff" }}
 			/>
 			<Section
@@ -81,14 +81,14 @@ export default component$(() => {
 			<Section
 				title="分享"
 				desc="开源开放，打破桎梏"
-				img="/asset/image/egg.png"
+				img="/asset/image/egg.webp"
 				containerStyles={{ backgroundColor: "#fff" }}
 				imageStyles={{ width: "22%" }}
 			/>
 			<Section
 				title="内省"
 				desc="积水为溪，厚积薄发"
-				img="/asset/image/river.png"
+				img="/asset/image/river.webp"
 				dark={true}
 				containerStyles={{ backgroundColor: "#000" }}
 				fullImg={true}

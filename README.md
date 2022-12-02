@@ -20,6 +20,8 @@ Welcome to Jonsam's personal <b>Portfolio</b> pages.🧑‍💻👩‍💻👨�
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b8b6d187-189c-43d3-b7ef-67af7163da01/deploy-status)](https://app.netlify.com/sites/aquamarine-meringue-336076/deploys)
 
+
+
 ## 📦 About
 
 This portfolio pages is built on [QwikCity](https://qwik.builder.io) and [Netlify](https://docs.netlify.com/edge-functions/overview/). IF you like this project, feel free to use as a template and hit a star for me.
@@ -29,13 +31,14 @@ This portfolio pages is built on [QwikCity](https://qwik.builder.io) and [Netlif
 ## 🌟 Inspirations From
 
 - [apple.com](https://www.apple.com.cn/iphone-14/)
-- [reactresume.com](https://reactresume.com/)
 
 ## 📝 Plan
 
 - [ ] support mobile.
 - [ ] custom 404 page.(QwikCity seems not support this feature.)
 - [x] download resume.
+- [ ] PWA
+- [ ] faster speed
 
 ## 🖊️ License
 
