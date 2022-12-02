@@ -40,7 +40,7 @@ export default component$((props: Props) => {
 				const { items, id, title = [] } = section;
 				return (
 					<div class={`section ${id}`} id={id}>
-						<p class="title">
+						<p class="heading">
 							<span>{title[0]}</span>，{title[1]}。
 						</p>
 						<div
