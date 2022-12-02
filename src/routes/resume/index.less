@@ -19,6 +19,7 @@
     justify-content: center;
     background-color: rgba(255,255,255,0.9);
     z-index: 998;
+    box-sizing: border-box;
     .inner {
       width: 100%;
       height: 100%;
@@ -27,6 +28,7 @@
       align-items: center;
       justify-content: space-between;
       flex-direction: row;
+      padding: 0 22px;
       .right {
         display: flex;
         align-items: center;
@@ -96,6 +98,23 @@
     }
     .content {
       padding: 20px 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .content.__resume__{
+    .banner .inner {
+      .right .contact {
+        display: none;
+      }
+    }
+    .inner {
+      overflow-x: auto;
+      display: block;
+    }
+    .toc {
+      display: none;
     }
   }
 }

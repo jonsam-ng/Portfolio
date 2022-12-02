@@ -48,12 +48,30 @@ export default component$((props: Props) => {
 							window:onLoad$={() => {
 								import("glider-js").then((m) => {
 									const Glider = m.default;
+									const { phone = false, tablet = false } = {
+										phone: window.innerWidth < 768,
+										tablet:
+											window.innerWidth <= 1024 && window.innerWidth >= 768,
+									};
+									const [slidesToShow, slidesToScroll] = phone
+										? [1, 1]
+										: tablet
+										? [2, 1]
+										: [3, 1];
+									console.log("==>", {
+										id,
+										phone,
+										tablet,
+										w: window.innerWidth,
+									});
 									new Glider(document.querySelector(`.glider-${id}`), {
 										dots: `.dots-${id}`,
 										arrows: {
 											prev: `.glider-prev-${id}`,
 											next: `.glider-next-${id}`,
 										},
+										slidesToShow,
+										slidesToScroll,
 										...gliderProps,
 									});
 								});

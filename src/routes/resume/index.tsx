@@ -58,7 +58,7 @@ export default component$(() => {
 				<div class="inner">
 					<div class="left"></div>
 					<div class="right">
-						<a class="btn btn-default" href="/contact">
+						<a class="btn btn-default contact" href="/contact">
 							<i class="icon">{CallIcon}</i>
 							联系我
 						</a>

@@ -1,4 +1,8 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import {
+	component$,
+	useStylesScoped$,
+	useClientEffect$,
+} from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import {
 	ArrowRightIcon,
@@ -16,6 +20,33 @@ import styles from "./index.less?inline";
  */
 export default component$(() => {
 	useStylesScoped$(styles);
+
+	useClientEffect$(() => {
+		// see https://nickpiscitelli.github.io/Glider.js/#usage
+		if (!window) return;
+		import("glider-js").then((m) => {
+			const Glider = m.default;
+			const { phone = false, tablet = false } = window.isMobile ?? {
+				phone: false,
+				tablet: false,
+			};
+			const [slidesToShow, slidesToScroll] = phone
+				? [2, 1]
+				: tablet
+				? [4, 2]
+				: [5, 2];
+			new Glider(document.querySelector(".glider-topic"), {
+				slidesToShow,
+				slidesToScroll,
+				draggable: true,
+				dots: ".dots-topic",
+				arrows: {
+					prev: ".glider-prev-topic",
+					next: ".glider-next-topic",
+				},
+			});
+		});
+	});
 
 	return (
 		<div class="content">
@@ -62,27 +93,7 @@ export default component$(() => {
 							</ul>
 						</div>
 					</div>
-					<div
-						class="topics"
-						id="tech-tags"
-						window:onLoad$={() => {
-							// see https://nickpiscitelli.github.io/Glider.js/#usage
-							if (!window) return;
-							import("glider-js").then((m) => {
-								const Glider = m.default;
-								new Glider(document.querySelector(".glider-topic"), {
-									slidesToShow: 5,
-									slidesToScroll: 2,
-									draggable: true,
-									dots: ".dots-topic",
-									arrows: {
-										prev: ".glider-prev-topic",
-										next: ".glider-next-topic",
-									},
-								});
-							});
-						}}
-					>
+					<div class="topics" id="tech-tags">
 						<div class="glider-contain">
 							<div class="glider glider-topic">
 								{configs.topics.map(({ src, text, desc, link }) => (
@@ -113,7 +124,7 @@ export default component$(() => {
 				<ProjectList
 					className="sections"
 					list={configs.projects}
-					gliderProps={{ slidesToShow: 3, slidesToScroll: 1, draggable: true }}
+					gliderProps={{ draggable: true }}
 				/>
 				<ADBanner />
 			</div>
