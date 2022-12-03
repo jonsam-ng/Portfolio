@@ -18,7 +18,9 @@ Welcome to Jonsam's personal <b>Portfolio</b> pages.🧑‍💻👩‍💻👨�
   <a href="./README_zh-CN.md">🌐 中文</a>
 </p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b8b6d187-189c-43d3-b7ef-67af7163da01/deploy-status)](https://app.netlify.com/sites/aquamarine-meringue-336076/deploys)
+<p align="center">
+  <a href="https://app.netlify.com/sites/aquamarine-meringue-336076/deploys" target="_blank"><img src="https://api.netlify.com/api/v1/badges/b8b6d187-189c-43d3-b7ef-67af7163da01/deploy-status" alt="Netlify Status"/></a>
+</p>
 
 ## 📦 About
 
