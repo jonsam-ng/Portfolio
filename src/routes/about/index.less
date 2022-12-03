@@ -47,10 +47,19 @@
       align-items: center;
       justify-content: flex-end;
       li {
+        margin-bottom: 0;
         &:not(:last-of-type) {
           margin-right: 0.6em;
         }
       }
     }
 	}
+}
+
+@media screen and (max-width: 768px){
+  .content .banner {
+    .name {
+      display: none;
+    }
+  }
 }

@@ -4,6 +4,10 @@ section {
   letter-spacing: 0em;
   &.me {
     padding-bottom: 0;
+    p {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
     .name {
       font-weight: 600;
       margin-bottom: 0.5em;
@@ -217,8 +221,16 @@ section {
   .section {
     &.reading {
       flex-direction: column;
-      .left .inner p {
-        font-size: 36px;
+      .left .inner {
+        p {
+          font-size: 36px;
+        }
+        .opt {
+          margin-top: 16px;
+        }
+      }
+      .right img {
+        width: 80%;
       }
     }
     &.writing {
