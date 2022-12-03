@@ -53,6 +53,7 @@ Thanks for great inspirations :thumbsup: provided by:
 - [ ] switch skins for resume.
 - [ ] i18n supported, see [robisim74/qwik-speak: Translate your Qwik apps into any language](https://github.com/robisim74/qwik-speak).
 - [x] gray mode.
+- [x] support blogs mdx.
 
 ## 🖊️ License
 

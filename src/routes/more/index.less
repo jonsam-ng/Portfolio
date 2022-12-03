@@ -1,6 +1,7 @@
 .docs {
   height: 100%;
   box-sizing: border-box;
+  font-size: 14px;
   .inner{
     display: flex;
     flex-direction: column;
@@ -79,33 +80,31 @@
           text-align: center;
         }
         h1 {
-          @apply mb-7;
-          @apply relative;
           line-height: 1.2;
-          font-size: 55px;
+          font-size: 36px;
           font-weight: 800;
           scroll-margin-top: var(--scroll-margin-top);
+          margin-top: 1.5em;
         }
         h2,
         h3,
         h4,
         h5,
         h6 {
-        	@apply text-xl font-semibold;
-        	@apply relative;
         	margin-top: 1.2em;
         	scroll-margin-top: var(--scroll-margin-top);
         	margin-bottom: max(0.7em, 18px);
         }
         h2 {
           line-height: 1.2;
-          font-size: 36px;
+          font-size: 24px;
           font-weight: 800;
           scroll-margin-top: var(--scroll-margin-top);
           margin-top: 50px;
         }
         h3 {
-          font-size: 1.8rem;
+          font-size: 20px;
+          font-weight: 600;
         }
         h2 a,
         h3 a,
@@ -133,21 +132,16 @@
         }
         ul,
         ol {
-        	@apply my-4;
-        	@apply ml-10;
         	line-height: 1.7;
-        	list-style: disc;
-
-        	font-size: 16px;
         	font-weight: 400;
         	color: var(--secondary-text-color);
+          padding-left: 20px;
         }
         ol {
           list-style: decimal;
         }
         li {
-          @apply my-1;
-          @apply pl-2;
+          list-style: disc;
           &::marker,
           &::-webkit-details-marker {
           	color: var(--interactive-text-color);
