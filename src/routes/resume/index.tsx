@@ -53,7 +53,7 @@ export default component$(() => {
 	});
 
 	return (
-		<div class="content __resume__">
+		<div class="content __resume__ no-gray">
 			<div class="banner">
 				<div class="inner">
 					<div class="left"></div>

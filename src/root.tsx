@@ -27,7 +27,7 @@ export default component$(() => {
 				<link href="/favicon.ico" rel="icon" sizes="any"></link>
 				<RouterHead />
 			</head>
-			<body lang="zh-CN">
+			<body lang="zh-CN" class="non-gray-mode">
 				<RouterOutlet />
 				<ServiceWorkerRegister />
 			</body>

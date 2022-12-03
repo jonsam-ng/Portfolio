@@ -4,7 +4,7 @@ import { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
 	return (
-		<main>
+		<main class="">
 			<Header fixed={true} />
 			<Slot />
 			<Footer />
