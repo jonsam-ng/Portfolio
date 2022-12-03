@@ -1,5 +1,12 @@
 import { component$, Slot, useStyles$ } from "@builder.io/qwik";
-import { Header, Footer, SideBar, OnThisPage, ContentNav } from "~/components";
+import {
+	Header,
+	Footer,
+	SideBar,
+	OnThisPage,
+	ContentNav,
+	Back2Top,
+} from "~/components";
 import styles from "./index.less?inline";
 
 export default component$(() => {
@@ -21,6 +28,7 @@ export default component$(() => {
 				</main>
 			</div>
 			<Footer />
+			<Back2Top />
 		</div>
 	);
 });
