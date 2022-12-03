@@ -1,10 +1,16 @@
-import { component$, useStyles$ } from "@builder.io/qwik";
+import {
+	component$,
+	useStyles$,
+	useContextProvider,
+	useStore,
+} from "@builder.io/qwik";
 import {
 	QwikCityProvider,
 	RouterOutlet,
 	ServiceWorkerRegister,
 } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
+import { GlobalStore, SiteStore } from "./context";
 import globalStyles from "./global.less?inline";
 import "animate.css";
 
@@ -17,6 +23,13 @@ export default component$(() => {
 	 */
 	useStyles$(globalStyles);
 
+	const store = useStore<SiteStore>({
+		headerMenuOpen: false,
+		sideMenuOpen: false,
+	});
+
+	useContextProvider(GlobalStore, store);
+
 	return (
 		<QwikCityProvider>
 			<head>
@@ -27,7 +40,14 @@ export default component$(() => {
 				<link href="/favicon.ico" rel="icon" sizes="any"></link>
 				<RouterHead />
 			</head>
-			<body lang="zh-CN" class="non-gray-mode">
+			<body
+				lang="zh-CN"
+				class="non-gray-mode"
+				class={{
+					"header-open": store.headerMenuOpen,
+					"menu-open": store.sideMenuOpen,
+				}}
+			>
 				<RouterOutlet />
 				<ServiceWorkerRegister />
 			</body>

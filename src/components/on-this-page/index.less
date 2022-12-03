@@ -1,0 +1,25 @@
+.on-this-page {
+  @apply z-20 bottom-0 pb-8 fixed z-20 overflow-y-auto hidden xl:block xl:w-[16rem] xl:top-[9rem];
+  font-size: 12px;
+  right: 60px;
+  h6 {
+    @apply font-semibold pb-3 uppercase;
+  }
+  ul {
+    @apply pb-6;
+    li {
+      margin: 0;
+      a {
+        position: relative;
+        display: block;
+        color: var(--interactive-text-color);
+        border: 0 solid var(--primary-color);
+        border-left-width: 2px;
+        padding: 4px 2px 4px 12px;
+        &.indent {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.sidebar {
+	text-align: left;
+  z-index: 20;
+  bottom: 0;
+  position: fixed;
+  left: calc(50vw - var(--max-page-width) / 2);
+  top: calc(var(--header-height));
+  width: var(--sidebar-width);
+  padding: 0 22px;
+  user-select: none!important;
+  summary {
+    cursor: pointer;
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #213547;
+    &::marker,
+    &::-webkit-details-marker {
+    	display: none;
+    	content: "";
+    }
+  }
+  details[open] summary {
+    
+  }
+  .menu {
+    z-index: 10;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 44px;
+    ul {
+    	padding: 0;
+      margin: 0;
+    }
+    li {
+      padding: 0;
+      line-height: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(60, 60, 60, .7);
+      a {
+        &.is-active {
+          font-weight: 800;
+          color: var(--primary-color)
+        }
+      }
+    }
+    details li {
+      padding: 0.4em 0.4em;
+      border-radius: 2px;    
+      a {
+        white-space: nowrap;
+        @apply block overflow-hidden text-ellipsis;
+      }
+      &:has(.is-active) {
+        background-color: rgb(242, 242, 242);
+        border-left: 2px solid rgb(0, 164, 83);
+      }
+    }
+  } 
+}
+
+
+
+.breadcrumbs {
+// 	@apply fixed z-10 w-[100%];
+// 	top: var(--header-height);
+// 	@apply border-b;
+// 	@apply px-1;
+// 	@apply flex;
+
+// 	/* large */
+	@apply lg:hidden;
+
+// 	color: var(--text-color);
+// 	background-color: var(--bg-color);
+// 	border-color: var(--bg-secondary-color);
+}
+
+// .breadcrumbs button {
+// 	@apply block;
+// 	@apply p-4;
+// 	@apply opacity-70;
+// 	@apply hover:opacity-100;
+// }
+
+// .breadcrumbs ol {
+// 	@apply flex text-sm leading-6 whitespace-nowrap min-w-0;
+// 	@apply flex items-center;
+// }
+
+// .breadcrumbs li {
+// 	@apply pl-1 pr-5;
+// 	position: relative;
+// }
+
+// .breadcrumbs li:after {
+// 	position: absolute;
+// 	content: "\203A";
+// 	top: -1px;
+// 	right: 6px;
+// }
+
+// .breadcrumbs li:last-child::after {
+// 	content: "";
+// }

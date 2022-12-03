@@ -5,7 +5,14 @@
  * the styles in here will be applied to the Document, without any sort of CSS scoping.
  *
  */
- @import url(./style/index.less);
+@import url(./style/index.less);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100%;
+}
 
 body {
 	background-color: #ffffff;
@@ -21,6 +28,7 @@ body {
   color: #1d1d1f;
   -webkit-font-smoothing: antialiased;
   direction: ltr;
+  height: 100%;
 }
 
 body:lang(zh-CN) {
