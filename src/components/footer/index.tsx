@@ -1,6 +1,6 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { GithubIcon, HomeIcon } from "../icon";
-import styles from "./index.less";
+import styles from "./index.less?inline";
 
 export default component$(() => {
 	useStylesScoped$(styles);

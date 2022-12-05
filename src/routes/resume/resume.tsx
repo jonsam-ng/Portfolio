@@ -1,6 +1,6 @@
 import { component$, useStyles$ } from "@builder.io/qwik";
 import { ExternalLinkIcon } from "~/components/icon";
-import styles from "./resume.less";
+import styles from "./resume.less?inline";
 
 export const LearnMore = component$(
 	({

@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import styles from "./index.less";
+import styles from "./index.less?inline";
 
 interface Props {
 	src: string;

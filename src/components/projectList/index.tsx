@@ -5,7 +5,7 @@ import {
 	ArrowRightIcon,
 	LinkIcon,
 } from "~/components/icon";
-import styles from "./index.less";
+import styles from "./index.less?inline";
 
 interface Props {
 	list: Section[];

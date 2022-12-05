@@ -1,5 +1,5 @@
 import { component$, useStyles$ } from "@builder.io/qwik";
-import styles from "./index.less";
+import styles from "./index.less?inline";
 
 export default component$(({ tocProps = {} }: { tocProps: any }) => {
 	useStyles$(styles);
