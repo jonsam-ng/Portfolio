@@ -151,7 +151,7 @@ export default component$(() => {
 							</a>
 						</span>
 						<span>前端开发（业务部）</span>
-						<span>2020.07-至今</span>
+						<span>2020.07-2022.10</span>
 					</p>
 					<ul class="vertical mark">
 						<li>
