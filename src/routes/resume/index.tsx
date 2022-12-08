@@ -3,7 +3,7 @@ import { DocumentHead } from "@builder.io/qwik-city";
 import { TOC } from "~/components";
 import { CallIcon, DownloadIcon } from "~/components/icon";
 import Resume from "./resume";
-import styles from "./index.less?inline";
+import styles from "./index.less";
 
 /**
  * Page of Resume

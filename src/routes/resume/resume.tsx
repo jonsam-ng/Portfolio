@@ -1,6 +1,6 @@
 import { component$, useStyles$ } from "@builder.io/qwik";
 import { ExternalLinkIcon } from "~/components/icon";
-import styles from "./resume.less?inline";
+import styles from "./resume.less";
 
 export const LearnMore = component$(
 	({
@@ -129,9 +129,9 @@ export default component$(() => {
 						</span>
 						<span>软件工程（本科）</span>
 						<span>2016.09-2020.07</span>
-						<span>
+						{/* <span>
 							<LearnMore link="https://portfolio.jonsam.site/about/edu" />
-						</span>
+						</span> */}
 					</p>
 					<p>
 						主修课程：Java语言程序设计、C语言程序设计、网络原理、数据库原理、数据结构、操作系统、算法设计、计算机组成原理、软件工程等。
@@ -192,7 +192,7 @@ export default component$(() => {
 						</li>
 						<li>熟练使用Git、VSCode、NPM等开发工具。</li>
 						<li>
-							熟悉企业开发、测试、部署、上线流程和多环境部署，熟悉DevOps、CI/CD流程。
+							熟悉企业开发、测试、部署、上线流程和多环境部署，熟悉CI/CD流程。
 						</li>
 					</ul>
 				</div>
