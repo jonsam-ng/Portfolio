@@ -187,9 +187,7 @@ export default component$(() => {
 						<li>
 							掌握计算机组成原理、数据库、网络原理、浏览器渲染原理、数据结构与算法等专业知识。
 						</li>
-						<li>
-							熟练掌握HTML5、CSS3和JavaScript语言、ES6以及SCSS、LESS等CSS预处理器工具。
-						</li>
+						<li>熟练掌握HTML5、CSS3和JavaScript和ES6。</li>
 						<li>熟练使用Git、VSCode、NPM等开发工具。</li>
 						<li>
 							熟悉企业开发、测试、部署、上线流程和多环境部署，熟悉CI/CD流程。
@@ -214,9 +212,7 @@ export default component$(() => {
 								/>
 							</span>
 						</li>
-						<li>
-							使用Webpack、Babel、TypeScript等工具链构建工程，熟悉平台项目的开发与维护。
-						</li>
+						<li>熟悉Webpack、TypeScript等工具链。</li>
 					</ul>
 				</div>
 
@@ -231,7 +227,7 @@ export default component$(() => {
 								<LearnMore link="https://source.jonsam.site/qiankun/index/" />
 							</span>
 						</li>
-						<li>熟悉Hybrid H5、小程序、Electron应用开发。</li>
+						{/* <li>熟悉Hybrid H5、小程序、Electron应用开发。</li> */}
 						<li>
 							具有WebRTC音视频相关经验，曾参与巡课、Web Meeting等相关业务。
 							<span>
@@ -244,7 +240,7 @@ export default component$(() => {
 								<LearnMore link="http://100js.jonsam.site/WEB/03-%E6%9E%84%E5%BB%BA%E7%BB%84%E4%BB%B6%E5%BA%93" />
 							</span>
 						</li>
-						<li>熟悉EggJS、NextJS框架等NodeJS框架应用。</li>
+						{/* <li>熟悉EggJS、NextJS框架等NodeJS框架应用。</li> */}
 						<li>
 							有团队协同、Code Review、团队分享的相关经验。
 							<span>
