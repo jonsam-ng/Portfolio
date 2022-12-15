@@ -1,4 +1,5 @@
 import { component$, Slot, useStyles$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import {
 	Header,
 	Footer,
@@ -33,3 +34,7 @@ export default component$(() => {
 		</div>
 	);
 });
+
+export const head: DocumentHead = {
+	title: "文章",
+};
