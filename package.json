@@ -45,14 +45,13 @@
 		"node-fetch": "3.3.0",
 		"postcss": "^8.4.19",
 		"prettier": "2.7.1",
-		"tailwindcss": "^3.2.4",
 		"typescript": "4.9.3",
 		"vite": "3.2.4",
 		"vite-tsconfig-paths": "3.5.0"
 	},
 	"dependencies": {
-		"animate.css": "^4.1.1",
 		"classnames": "^2.3.2",
+		"github-markdown-css": "^5.1.0",
 		"glider-js": "^1.7.8",
 		"html2pdf.js": "^0.10.1",
 		"ismobilejs": "^1.1.1",

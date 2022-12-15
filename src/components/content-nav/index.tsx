@@ -18,18 +18,18 @@ const ContentNav = component$(() => {
 	const next = getNav(items, pathname, 1);
 
 	return (
-		<nav class="content-nav border-t border-slate-300 flex flex-wrap py-4">
+		<nav class="content-nav">
 			<div class="flex-1">
 				{prev ? (
-					<a class="px-3 py-1 prev" href={prev.href}>
+					<a class="prev" href={prev.href}>
 						{prev.text}
 					</a>
 				) : null}
 			</div>
 
-			<div class="flex-1 text-right">
+			<div class="">
 				{next ? (
-					<a class="px-3 py-1 next" href={next.href}>
+					<a class="next" href={next.href}>
 						{next.text}
 					</a>
 				) : null}

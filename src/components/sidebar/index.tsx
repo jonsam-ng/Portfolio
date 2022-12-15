@@ -1,13 +1,12 @@
-import { component$, useContext, useStyles$ } from "@builder.io/qwik";
+import { component$, useStyles$ } from "@builder.io/qwik";
 import { ContentMenu, useContent, useLocation } from "@builder.io/qwik-city";
-import { GlobalStore } from "../../context";
-// import { CloseIcon } from '../svgs/close-icon';
+// import { GlobalStore } from "../../context";
 import styles from "./index.less?inline";
 
 export default component$(() => {
 	useStyles$(styles);
 
-	const globalStore = useContext(GlobalStore);
+	// const globalStore = useContext(GlobalStore);
 	const { menu } = useContent();
 	const { pathname } = useLocation();
 	const breadcrumbs = createBreadcrumbs(menu, pathname);
@@ -16,14 +15,13 @@ export default component$(() => {
 		<aside class="sidebar">
 			<nav class="breadcrumbs">
 				<button
-					onClick$={() =>
-						(globalStore.sideMenuOpen = !globalStore.sideMenuOpen)
-					}
+					// onClick$={() => {
+					// 	globalStore.sideMenuOpen = !globalStore.sideMenuOpen;
+					// }}
 					type="button"
 					title="Toggle left menu"
 					aria-label="Toggle left menu"
 				>
-					<span class="sr-only">Navigation</span>
 					<svg width="24" height="24">
 						<path
 							d="M5 6h14M5 12h14M5 18h14"
@@ -43,15 +41,15 @@ export default component$(() => {
 				) : null}
 			</nav>
 			<nav class="menu">
-				<button
+				{/* <button
 					class="menu-close lg:hidden"
 					onClick$={() =>
 						(globalStore.sideMenuOpen = !globalStore.sideMenuOpen)
 					}
 					type="button"
 				>
-					{/* <CloseIcon width={24} height={24} /> */}
-				</button>
+					x
+				</button> */}
 				<Items items={menu?.items} pathname={pathname} />
 			</nav>
 		</aside>

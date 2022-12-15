@@ -1,12 +1,19 @@
 .on-this-page {
-  @apply z-20 bottom-0 pb-8 fixed z-20 overflow-y-auto hidden xl:block xl:w-[16rem] xl:top-[9rem];
+  z-index: 20;
+  top: calc(var(--header-height));
+  padding-bottom: 8px;
+  position: fixed;
+  overflow: hidden;
+  overflow-y: auto;
   font-size: 12px;
-  right: 60px;
+  right: 20px;
+  padding-top: 44px;
   h6 {
-    @apply font-semibold pb-3 uppercase;
+    font-weight: 450;
+    padding-bottom: 3px;
   }
   ul {
-    @apply pb-6;
+    padding-bottom: 6px;
     li {
       margin: 0;
       a {
@@ -21,5 +28,10 @@
         }
       }
     }
+  }
+}
+@media screen and (max-width: 1340px){
+  .on-this-page {
+    display: none;
   }
 }

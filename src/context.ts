@@ -1,7 +1,6 @@
 import { createContext } from "@builder.io/qwik";
 
 export interface SiteStore {
-	headerMenuOpen: boolean;
 	sideMenuOpen: boolean;
 }
 

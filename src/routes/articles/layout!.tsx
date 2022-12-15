@@ -8,6 +8,7 @@ import {
 	Back2Top,
 } from "~/components";
 import styles from "./index.less?inline";
+import "github-markdown-css/github-markdown-light.css";
 
 export default component$(() => {
 	useStyles$(styles);
@@ -18,7 +19,7 @@ export default component$(() => {
 			<div class="inner ac-content">
 				<main>
 					<SideBar />
-					<div class="docs-container">
+					<div class="docs-container markdown-body">
 						<article>
 							<Slot />
 						</article>

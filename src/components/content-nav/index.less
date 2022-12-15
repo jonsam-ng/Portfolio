@@ -1,18 +1,22 @@
+.content-nav {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
 .content-nav .prev,
 .content-nav .next {
   position: relative;
-  background-color: var(--content-nav-button-bg-color);
-  border: 1px solid var(--content-nav-button-bg-color);
   border-radius: 5px;
   padding: 6px 16px;
   text-decoration: none;
-  color: white;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 10px 0;
   max-width: 150px;
+  font-size: 14px;
 }
 
 @media (min-width: 540px) {
@@ -21,14 +25,6 @@
     max-width: 250px;
   }
 }
-
-.content-nav .prev:hover,
-.content-nav .next:hover {
-  background-color: var(--content-nav-button-hover-bg-color);
-  border: 1px solid var(--content-nav-button-text-color);
-  color: var(--content-nav-button-text-color);
-}
-
 .content-nav .prev {
   padding-left: 24px;
 }

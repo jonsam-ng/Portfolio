@@ -15,6 +15,7 @@
     .docs-container {
       padding-left: var(--sidebar-width);
       width: 100%;
+      box-sizing: border-box;
       article {
         a {
           color: var(--interactive-text-color);
@@ -172,9 +173,6 @@
           border-bottom: 2px solid var(--code-border-color);
           user-select: all;
         }
-        table {
-          @apply my-5;
-        }
         th,
         td {
         	padding: 6px;
@@ -224,4 +222,11 @@
 		font-size: 1.2rem;
 		margin-top: 2rem;
 	}
+}
+
+
+@media screen and (max-width: 1024px){
+  .docs main .docs-container {
+    padding-left: 0;
+  }
 }

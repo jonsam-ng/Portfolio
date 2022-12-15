@@ -27,10 +27,10 @@ const configs: {
 			text: "联系",
 			to: "/contact",
 		},
-		// {
-		// 	text: "更多",
-		// 	to: "/more/overview",
-		// },
+		{
+			text: "文章",
+			to: "/articles/overview",
+		},
 	],
 	socialLinks: [
 		{

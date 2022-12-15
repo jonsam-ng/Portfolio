@@ -12,7 +12,6 @@ import {
 import { RouterHead } from "./components/router-head/router-head";
 import { GlobalStore, SiteStore } from "./context";
 import globalStyles from "./global.less?inline";
-import "animate.css";
 
 export default component$(() => {
 	/**
@@ -42,7 +41,6 @@ export default component$(() => {
 			</head>
 			<body
 				lang="zh-CN"
-				class="non-gray-mode"
 				class={{
 					"header-open": store.headerMenuOpen,
 					"menu-open": store.sideMenuOpen,
